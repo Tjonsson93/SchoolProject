@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Note App</title>
+</head>
+<body>
+    <header>
+        <h1>Note App</h2>
+    </header>    
+    <aside>    
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/notes.html">Notes</a>
+            <a href="/newNote.html">Create new</a>
+        </nav>
+    </aside>
+    <section>
+        <div>
+            <h2>My notes</h2>
+            <form action=""></form>
+                <select name="order" id="order">
+                    <option value="" disabled selected>order by...</option>
+                    <option value="Orderby1">Orderby A-Ö</option>
+                    <option value="Orderby2">Order by newest</option>
+                    <option value="Orderby3">order by oldest</option>
+                </select>
+
+            <div class="mainpulation">
+                <button id="addButton">Add</button>
+                <button id="deleteButton">Delete</button>
+                <input type="text" placeholder="search...">                
+                <div class="listOfNotes">
+                        <h3>My notes</h3>
+
+                    <ol id="listOfNotes">
+                        <li>Shopping list</li>
+                        <li>Birthdays</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="noteText">
+        <h3>This is the title of my note</h3>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae necessitatibus doloremque qui iure eos nesciunt consectetur ab animi in, cumque provident! Tenetur minima libero cum quasi, totam officiis iusto deserunt.</p>
+        </div>    
+
+    </article>   
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Note App</title>
+</head>
+<body>   
+    <aside>    
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/notes.html">Notes</a>
+            <a href="/newNote.html">Create new</a>
+        </nav>
+    </aside>
+
+    <div class="dateInput">
+        <form action=""></form> 
+        <label for="date">Date</label>
+        <input type="date">
+        <div class="titleInput">
+            <form action="">
+                <input type="text" placeholder="Title">
+            </form>
+            <div>
+                <form action="">
+                    <textarea name="note" id="notefield" cols="30" rows="10"></textarea>
+                    <br>
+                    <a href="">
+                        <button id="addPicture">Add picture</button>
+                    </a>
+                    <a href="">
+                        <button id="addFile">Add file</button>
+                    </a>
+                    <button id="save">Save</button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

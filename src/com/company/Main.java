@@ -1,10 +1,5 @@
 package com.company;
 
-public class Main {
-
-    public static void main(String[] args) {
-	//package com.company;
-
 import express.Express;
 import express.middleware.Middleware;
 
@@ -28,8 +23,5 @@ public class Main {
 
         app.listen(3000);
         System.out.println("server started at port 3000");
-    }
-}
-
     }
 }
