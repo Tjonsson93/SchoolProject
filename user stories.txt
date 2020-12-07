@@ -1,0 +1,14 @@
+User story
+
+Feature: Anteckningar
+
+Som användare vill jag kunna lägga in filer i form av bilder, videos, länkar men även listor och anteckningar. Jag vill även kunna lägga in rubriker och kunna gruppera dessa samt kunna markera, ta bort och ändra. Jag ska även kunna söka efter listor/filer. 
+
+Given: Att jag är på anteckningssidan
+And: Jag kan skapa listor eller lägga in filer
+When: Jag fyller i saker/ bifogar filer i input-fältet
+And: Jag kan sätta rubrik eller grupperar mina listor/filer 
+Then: Läggs den information jag angivit bland mina anteckningar
+And: Jag markerar sakerna i listan när dessa är klara eller delvis klara.
+And: Jag kan ta bort/ändra/flytta saker i mina listor/filer
+And: Jag kan söka efter listor/filer
