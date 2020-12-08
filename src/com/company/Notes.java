@@ -5,16 +5,19 @@ public class Notes {
     private int id;
     private String title;
     private String text;
-    private int date;
+    private int timestamp;
+    private String imageUrl;
+    private String fileUrl;
 
-    public Notes() {
+    public Notes() { }
 
-    }
-
-    public Notes(String title, String text, int date) {
+    public Notes(String title, String text, int timestamp, String imageUrl, String fileUrl) {
         this.title = title;
         this.text = text;
-        this.date = date;
+        this.timestamp = timestamp;
+        this.imageUrl = imageUrl;
+        this.fileUrl = fileUrl;
+
     }
 
     public int getId() {
@@ -41,12 +44,28 @@ public class Notes {
         this.text = text;
     }
 
-    public int getDate() {
-        return date;
+    public int getTimestamp() {
+        return timestamp;
     }
 
-    public void setDate(int date) {
-        this.date = date;
+    public void setTimestamp(int timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getFileUrl() {
+        return fileUrl;
+    }
+
+    public void setFileUrl(String fileUrl) {
+        this.fileUrl = fileUrl;
     }
 
     @Override
@@ -55,7 +74,9 @@ public class Notes {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", text='" + text + '\'' +
-                ", date=" + date +
+                ", timestamp=" + timestamp +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", fileUrl='" + fileUrl + '\'' +
                 '}';
     }
 }
