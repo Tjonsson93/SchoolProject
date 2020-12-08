@@ -11,6 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         Express app = new Express();
         Database db = new Database();
 
@@ -38,8 +39,9 @@ public class Main {
             res.send("post ok");
         });
 
-        app.delete("/rest/notes/:id", (req, res) -> {
+        app.delete("rest/notes:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
+
             db.deleteNotes(notes);
         });
 

@@ -10,7 +10,6 @@ public class Database {
 
     private Connection conn;
 
-
     public Database() {
 
         try {
@@ -78,15 +77,17 @@ public class Database {
     }
 
     public void deleteNotes(Notes note) {
+
         try {
-            PreparedStatement statement = conn.prepareStatement("DELETE FROM notes WHERE id = ?");
-            statement.setInt(1, note.getId());
-            statement.executeUpdate();
+            PreparedStatement stmt = conn.prepareStatement("DELETE FROM notes WHERE i = ?");
+            stmt.setInt(1, note.getId());
+
+            stmt.executeUpdate();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
 
-    }
 
+    }
 
 }

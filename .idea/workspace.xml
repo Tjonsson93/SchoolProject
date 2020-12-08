@@ -10,667 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8674ce-5700-44c6-9ee7-0ea87ed5f90c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../CV.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/Auctionista_er.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/Pet Store.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/Portfolio/auctionista_SarahAdin.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/VSCodeUserSetup-x64-1.49.2.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/auctionista.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/auctionista.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/auctions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/bids.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/book_store.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/buyers.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/categories.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/foodStore.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/foodstore.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/images.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/kalender.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/life_in_the_1900s.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/niklas-ER-modell.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/pet_store - backup.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/pet_store.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/sellers.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Databaser/times.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Agil_Projektmetodik.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git/AtomSetup-x64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git/Git-2.29.2.2-64-bit.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git/GitKrakenSetup.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git/OPA20___Git_Introduktion.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git/cmder.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git/video (10).mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git/video (11).mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git/video (8).mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Git/video (9).mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/Caffé_Retro/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/Caffé_Retro/images/cosy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/Caffé_Retro/images/hot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/Caffé_Retro/images/juicy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/Caffé_Retro/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/Caffé_Retro/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/fredag 2020-11-13/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/fredag 2020-11-13/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/fredag 2020-11-13/webb.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/fredag 2020-11-13/webbstyles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html-css-hello-world/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html-css-hello-world/images/cute kitty.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html-css-hello-world/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html-css-hello-world/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_Crash_course_pt5/images/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_Crash_course_pt5/images/thumb-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_Crash_course_pt5/images/thumb-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_Crash_course_pt5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_Crash_course_pt5/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course/images/cat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt2/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt3.5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt3.5/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt3/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt3/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt3/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/html_css_crash_course_pt4/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/index.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/Star Wars Intro HD 1080p.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/aboutc3po.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/aboutchewbacca.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/aboutr2d2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/aboutyoda.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/images/c-3po.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/images/chewbacca.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/images/pictureOfC3PO.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/images/pictureOfChewbacca.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/images/pictureOfR2D2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/images/pictureOfYoda.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/images/r2-d2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/images/stars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/images/yoda.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HTML_CSS/superhero-fanpage/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/2020-10-23.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/out/production/2020-10-23/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-23/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/2020-10-29.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/22102020.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/out/production/22102020/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/22102020/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Abstraction.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java-grunder_v.0.8.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/out/production/Java/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Java2020-10-20/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Person/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Person/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Person/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Person/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Person/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Person/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Person/Person.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Person/out/production/Person/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Person/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/Repetition.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/out/production/Repetition/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Repetition/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Test Kitchen/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Test Kitchen/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Test Kitchen/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Test Kitchen/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Test Kitchen/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Test Kitchen/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Test Kitchen/Test Kitchen.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Test Kitchen/out/production/Test Kitchen/TestKitchen.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/Test Kitchen/src/TestKitchen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/arrayList 2020-10-27.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/out/production/arrayList 2020-10-27/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/arrayList 2020-10-27/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/backpack with items.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/out/production/backpack with items/com/company/Backpack.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/out/production/backpack with items/com/company/HealingItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/out/production/backpack with items/com/company/Item.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/out/production/backpack with items/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/out/production/backpack with items/com/company/Weapon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/src/com/company/Backpack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/src/com/company/HealingItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/src/com/company/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/backpack with items/src/com/company/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/calculator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/out/production/calculator/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/calculator/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/classes-examples.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/out/production/classes-examples/com/company/Cat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/out/production/classes-examples/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/out/production/classes-examples/com/company/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/src/com/company/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/classes-examples/src/com/company/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/exercises 2020-20-23.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/out/production/exercises 2020-20-23/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/exercises 2020-20-23/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/extra uppgifter.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/out/production/extra uppgifter/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/extra uppgifter/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/if.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/out/production/if/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/out/production/if/com/company/Time.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/if/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/innerClasses.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/libraries/sqlite_jdbc_3_32_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/java-sql.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/my-awesome-database.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/out/production/java-sql/com/company/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/out/production/java-sql/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/out/production/java-sql/com/company/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/src/com/company/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql/src/com/company/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/libraries/sqlite_jdbc_3_32_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/java-sql2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/out/production/java-sql2/com/company/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/out/production/java-sql2/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/out/production/java-sql2/com/company/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/skolan.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/sqlite-jdbc-3.32.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/src/com/company/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/java-sql2/src/com/company/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/klasser-arv.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/out/production/klasser-arv/com/company/Entities/Character.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/out/production/klasser-arv/com/company/Entities/Enemy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/out/production/klasser-arv/com/company/Entities/Player.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/out/production/klasser-arv/com/company/Entities/Spider.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/out/production/klasser-arv/com/company/Entities/Wolf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/out/production/klasser-arv/com/company/Game.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/out/production/klasser-arv/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/src/com/company/Entities/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/src/com/company/Entities/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/src/com/company/Entities/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/src/com/company/Entities/Spider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/src/com/company/Entities/Wolf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/src/com/company/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-arv/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/klasser-metoder.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/out/production/klasser-metoder/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-metoder/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/klasser-try-catch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/out/production/klasser-try-catch/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/out/production/klasser-try-catch/com/company/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/klasser-try-catch/src/com/company/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/lalalalal.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/src/com/company/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/src/com/company/Barn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/src/com/company/Cow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/src/com/company/Farmer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/lalalalal/src/com/company/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/methods.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/out/production/methods/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/methods/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/miniOvningar 2020-10-27.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/out/production/miniOvningar 2020-10-27/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/miniOvningar 2020-10-27/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/modifiers.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/polymorphism.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/out/production/repetition 2020-10-27/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/repetition 2020-10-27.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/repetition 2020-10-27/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/out/production/retry/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/retry.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/retry/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/libraries/samlaren.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/out/production/samlaren/com/company/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/out/production/samlaren/com/company/Game.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/out/production/samlaren/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/samlaren.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/samlarens_tv-spels_databas.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/sqlite-jdbc-3.32.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/src/com/company/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/src/com/company/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/samlaren/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/out/production/test 2020-10-26/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/out/production/test 2020-10-26/com/company/Utilities.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/src/com/company/Utilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/test 2020-10-26/test 2020-10-26.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/libraries/sqlite_jdbc_3_32_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/out/production/tv-spel/com/company/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/out/production/tv-spel/com/company/Game.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/out/production/tv-spel/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/src/com/company/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/src/com/company/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/tv-spel/tv-spel.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/out/production/weekdaysArray/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Java/weekdaysArray/weekdaysArray.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Fredag.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Fredag/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Fredag/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Fredag/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/JavaScript for kids/JavaScript for Kids ( PDFDrive ).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/JavaScript for kids/hangman.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/JavaScript for kids/links.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/JavaScript for kids/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/JavaScript for kids/prompt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/JavaScript_introduktion.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Lösningsförslag inköpslista/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Lösningsförslag inköpslista/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Lösningsförslag inköpslista/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Mall.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Mall/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Mall/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Miniövningar/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Miniövningar/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Miniövningar/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/New folder/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/New folder/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Studiecirkel/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Studiecirkel/position.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Studiecirkel/postition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Studiecirkel/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Tisdag_1_12.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Todoey/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Todoey/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Todoey/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Todoey/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/Uppdaterad_-_JavaScript_intro.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/User_Stories_Wireframes__Beteenden.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/__MACOSX/shopping_list/._index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/__MACOSX/shopping_list/._style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/gherkin.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/object_literals_persons_and_pets/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/object_literals_persons_and_pets/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/object_literals_persons_and_pets/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/petspersonsalexander/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/petspersonsalexander/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/petspersonsalexander/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/petspersonsalexander/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/shopping_list.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/shopping_list/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/shopping_list/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/shopping_list/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/uppgifter-js.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/uppgifter-js/images/Cat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/uppgifter-js/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/uppgifter-js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaScript/uppgifter-js/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OPA20_OP1_-_Projektuppgift_i_grupper_-_PIM-Notes-1.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SQLite/book_store_updated.SarahAdin.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SQLite/pet_store.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../StarUML/Untitled.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/libraries/java_express_0_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/libraries/sqlite_jdbc_3_32_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/express-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/express.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/libs/java-express-0.3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/libs/sqlite-jdbc-3.32.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/out/production/express-example/com/company/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/out/production/express-example/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/out/production/express-example/com/company/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/out/production/express-example/www/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/out/production/express-example/www/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/out/production/express-example/www/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/out/production/express-example/www/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/src/com/company/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/src/com/company/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/src/www/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/src/www/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/src/www/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../express-example/src/www/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-express-tutorial.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_express_0_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_32_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NoteApp.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/java-express-0.3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/sqlite-jdbc-3.32.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notesApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/images/photo-1595853035070-59a39fe84de3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/newNote.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/notes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Notes.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frontend/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frontend/images/photo-1595853035070-59a39fe84de3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frontend/newNote.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frontend/notes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frontend/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Frontend/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Notes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/libraries/java_express_0_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/libraries/sqlite_jdbc_3_32_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/libs/java-express-0.3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/libs/sqlite-jdbc-3.32.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/out/production/todoey/com/company/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/out/production/todoey/com/company/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/out/production/todoey/www/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/out/production/todoey/www/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/out/production/todoey/www/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/src/com/company/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/src/com/company/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/src/www/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/src/www/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/src/www/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/todoey.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoey/todoey.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/description.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/libraries/java_express_0_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/libraries/sqlite_jdbc_3_32_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/libs/java-express-0.3.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/libs/sqlite-jdbc-3.32.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/src/com/company/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/src/com/company/Todo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/todoeypk.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../todoeypk/todos.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Personligt brev - Copy.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Personligt brev.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sida om mig/sida-om-mig-2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sida om mig/sida-om-mig-2/__MACOSX/._sida-om-mig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sida om mig/sida-om-mig-2/__MACOSX/sida-om-mig/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sida om mig/sida-om-mig-2/__MACOSX/sida-om-mig/._index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sida om mig/sida-om-mig-2/__MACOSX/sida-om-mig/._picture-of-me.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sida om mig/sida-om-mig-2/sida-om-mig/Sarah.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sida om mig/sida-om-mig-2/sida-om-mig/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sida om mig/sida-om-mig-2/sida-om-mig/picture-of-me.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sida om mig/sida-om-mig-2/sida-om-mig/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/__MACOSX/._one-pager-web" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/__MACOSX/one-pager-web/._.DS_Store" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/__MACOSX/one-pager-web/._images" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/__MACOSX/one-pager-web/images/._background-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/__MACOSX/one-pager-web/images/._icon1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/__MACOSX/one-pager-web/images/._icon2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/__MACOSX/one-pager-web/images/._icon3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/one-pager-web/images/background-image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/one-pager-web/images/icon1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/one-pager-web/images/icon2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/one-pager-web/images/icon3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/one-pager-web/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../one-pager-web/one-pager-web/style.css" afterDir="false" />
+    <list default="true" id="aa8674ce-5700-44c6-9ee7-0ea87ed5f90c" name="Default Changelist" comment="Added values to notes, created sqlite queries">
+      <change beforePath="$PROJECT_DIR$/../Schoolproject/SchoolProject-main/SchoolProject" beforeDir="false" afterPath="$PROJECT_DIR$/../Schoolproject/SchoolProject-main/SchoolProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoteApp.db" beforeDir="false" afterPath="$PROJECT_DIR$/NoteApp.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -689,6 +33,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -701,7 +46,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../express-example" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Skrivbord/java-express-tutorial-main" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -734,6 +79,21 @@
       <option name="presentableId" value="Default" />
       <updated>1607340315789</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added values to notes, created sqlite queries">
+      <created>1607422069169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607422069169</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added values to notes, created sqlite queries">
+      <created>1607422083130</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607422083130</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -747,34 +107,50 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added values to notes, created sqlite queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added values to notes, created sqlite queries" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1607341757204">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1607420864655">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607341757204" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1607350525149">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607420864655" />
+    <state x="1259" y="214" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1607419086136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607350525149" />
-    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1607351829564">
+    <state x="1259" y="214" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607419086136" />
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1607424043299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607351829564" />
-    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1607351829564">
+    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607424043299" />
+    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1607431026707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607351829564" />
-    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1607351829564">
+    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607431026707" />
+    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1607431026707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607351829564" />
-    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1607351829564">
+    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607431026707" />
+    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1607431026707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607351829564" />
-    <state x="1031" y="143" key="new project wizard" timestamp="1607349432762">
+    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607431026707" />
+    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1607431026707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1031" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607349432762" />
+    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607431026707" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1607422107672">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607422107672" />
+    <state x="1257" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607422088024">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1257" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607422088024" />
+    <state x="1031" y="143" key="new project wizard" timestamp="1607417745885">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1031" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607417745885" />
   </component>
 </project>
