@@ -1,3 +1,6 @@
+function deleteFunction() {
+    let deleteButtons = $(".deleteButton");
+    deleteButtons.empty();
 
 
 
