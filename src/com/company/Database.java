@@ -77,10 +77,10 @@ public class Database {
         }
     }
 
-    public void deleteNotes(Notes notes) {
+    public void deleteNotes(Notes note) {
         try {
             PreparedStatement statement = conn.prepareStatement("DELETE FROM notes WHERE id = ?");
-            statement.setInt(1, notes.getId());
+            statement.setInt(1, note.getId());
             statement.executeUpdate();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
