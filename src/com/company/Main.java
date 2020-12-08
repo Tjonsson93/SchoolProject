@@ -11,7 +11,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         Express app = new Express();
         Database db = new Database();
 
@@ -39,6 +38,11 @@ public class Main {
             res.send("post ok");
         });
 
+        app.delete("/rest/notes/:id", (req, res) -> {
+            Notes note = (Notes) req.getBody(Notes.class);
+            db.deleteNotes(note);
+        });
+        
         try {
             app.use(Middleware.statics(Paths.get("src/frontend").toString()));
         } catch (IOException e) {
