@@ -39,10 +39,10 @@ public class Main {
         });
 
         app.delete("/rest/notes/:id", (req, res) -> {
-            Notes note = (Notes) req.getBody(Notes.class);
-            db.deleteNotes(note);
+            Notes notes = (Notes) req.getBody(Notes.class);
+            db.deleteNotes(notes);
         });
-        
+
         try {
             app.use(Middleware.statics(Paths.get("src/frontend").toString()));
         } catch (IOException e) {
