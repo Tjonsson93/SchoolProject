@@ -11,13 +11,27 @@ public class Notes {
 
     public Notes() { }
 
+    public Notes(String title, String text, int timestamp) {
+        this.title = title;
+        this.text = text;
+        this.timestamp = timestamp;
+    }
+
     public Notes(String title, String text, int timestamp, String imageUrl, String fileUrl) {
         this.title = title;
         this.text = text;
         this.timestamp = timestamp;
         this.imageUrl = imageUrl;
         this.fileUrl = fileUrl;
+    }
 
+    public Notes(int id, String title, String text, int timestamp, String imageUrl, String fileUrl) {
+        this.id = id;
+        this.title = title;
+        this.text = text;
+        this.timestamp = timestamp;
+        this.imageUrl = imageUrl;
+        this.fileUrl = fileUrl;
     }
 
     public int getId() {

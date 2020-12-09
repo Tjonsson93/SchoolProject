@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 let notes = [];
 
 
@@ -74,7 +72,6 @@ function renderTitleList() {
 function deleteFunction() {
     let deleteButtons = $(".deleteButton");
     deleteButtons.empty();
->>>>>>> main
 
 
 

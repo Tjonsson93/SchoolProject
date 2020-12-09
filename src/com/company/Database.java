@@ -2,7 +2,10 @@ package com.company;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import express.utils.Utils;
+import org.apache.commons.fileupload.FileItem;
 
+import java.io.FileOutputStream;
+import java.nio.file.Paths;
 import java.sql.*;
 import java.util.List;
 
@@ -19,6 +22,36 @@ public class Database {
         }
     }
 
+    public String uploadImage(FileItem image) {
+        String imageUrl = "/images/" + image.getName();
+
+        try (var os = new FileOutputStream(Paths.get("src/Frontend" + imageUrl).toString())) {
+            os.write(image.get());
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+
+        return imageUrl;
+    }
+
+    public void updateNote(Notes note) {
+
+        try {
+            PreparedStatement stmt = conn.prepareStatement("UPDATE posts SET title = ?, text = ?, content = ?, timestamp = ?, imageUrl = ? WHERE id = ?");
+            stmt.setString(1, note.getTitle());
+            stmt.setString(2, note.getText());
+            stmt.setInt(3, note.getTimestamp());
+            stmt.setString(4, note.getImageUrl());
+            stmt.setString(5, note.getFileUrl());
+
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
     public List<Notes> getNotes() {
         List<Notes> notes = null;
 
@@ -29,9 +62,7 @@ public class Database {
             Notes[] notesFromRs = (Notes[]) Utils.readResultSetToObject(rs, Notes[].class);
             notes = List.of(notesFromRs);
 
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        } catch (JsonProcessingException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -51,9 +82,7 @@ public class Database {
 
             note = notesFromRs[0];
 
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        } catch (JsonProcessingException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -71,8 +100,8 @@ public class Database {
             stmt.setString(5, note.getFileUrl());
 
             stmt.executeUpdate();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        } catch (Exception e) {
+           e.printStackTrace();
         }
     }
 
@@ -86,8 +115,5 @@ public class Database {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
-
     }
-
 }

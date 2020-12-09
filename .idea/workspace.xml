@@ -10,7 +10,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8674ce-5700-44c6-9ee7-0ea87ed5f90c" name="Default Changelist" comment="Added values to notes, created sqlite queries" />
+    <list default="true" id="aa8674ce-5700-44c6-9ee7-0ea87ed5f90c" name="Default Changelist" comment="Added values to notes, created sqlite queries">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notesApp/com/company/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notesApp/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notesApp/com/company/Notes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Notes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Notes.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -41,7 +51,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Skrivbord/java-express-tutorial-main" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Skrivbord/java-express-tutorial-file-upload" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -108,34 +118,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added values to notes, created sqlite queries" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1607420864655">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1607437088830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607420864655" />
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607437088830" />
     <state x="1259" y="214" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1607419086136">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1259" y="214" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607419086136" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1607424043299">
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1607436222880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607424043299" />
-    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1607431026707">
+    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607436222880" />
+    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1607439331876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607431026707" />
-    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1607431026707">
+    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607439331876" />
+    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1607439331876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607431026707" />
-    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1607431026707">
+    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607439331876" />
+    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1607439331876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607431026707" />
-    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1607431026707">
+    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607439331876" />
+    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1607439331876">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607431026707" />
+    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607439331876" />
     <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1607422107672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -144,9 +154,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1257" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607422088024" />
-    <state x="1031" y="143" key="new project wizard" timestamp="1607417745885">
+    <state x="1031" y="143" key="new project wizard" timestamp="1607436227209">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1031" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607417745885" />
+    <state x="1031" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607436227209" />
+    <state x="1102" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1607438308279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1102" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607438308279" />
   </component>
 </project>
