@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Note App</title>
+    <script src="script.js" defer></script>
+    <title>Document</title>
 </head>
-<body>   
-    <aside>    
-        <nav>
-            <a href="/home.html">Home</a>
-            <a href="/notes.html">Notes</a>
-            <a href="/newNote.html">Create new</a>
-        </nav>
-    </aside>
+<body>
+    <header>
+        <h1>Awesome Notes</h1>
+    </header>
 
-    <div class="dateInput">
-        <form action=""></form> 
-        <label for="date">Date</label>
-        <input type="date">
-        <div class="titleInput">
-            <form action="">
-                <input type="text" placeholder="Title">
-            </form>
+    
+    <section>
+        <h2>My Notes</h2>
+        <div class="addNotes">
+            
+                <input id="titleInput" name="title" type="text" placeholder="title">
+                <br>
+                <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
+                <br>
+                <button id="addFile">Add file</button>
+                <br>
+                <button onclick="addNote()" id="button">Save</button>
+
+          
+            
             <div>
-                <form action="">
-                    <textarea name="note" id="notefield" cols="30" rows="10"></textarea>
-                    <br>
-                    <a href="">
-                        <button id="addPicture">Add picture</button>
-                    </a>
-                    <a href="">
-                        <button id="addFile">Add file</button>
-                    </a>
-                    <button id="save">Save</button>
-            </form>
+                <h3>My Notes</h3>
+                <ul id="notesList">
+                    
+                </ul>
             </div>
+                
+      
+            <div>
+                <h2>My Titles</h2>
+                <ul id="titleList">
+
+                </ul>
+            </div>
+
+
+
         </div>
-    </div>
+    </section>
+    
+    
+    
+
 
 
 </body>
