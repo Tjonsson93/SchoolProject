@@ -1,0 +1,57 @@
+nav{
+    text-align: center;
+    background-color: #9fc5c5;
+    
+
+}
+
+header{ 
+    font-family: Noto Sans JP, sans-serif;
+    text-align: center;
+
+}
+
+a{ 
+    font-family: Noto Sans JP, sans-serif;
+    color: #025c5c;
+    text-decoration: none;
+    padding: 40px;
+}
+
+h1{
+    color: #025c5c;
+}
+
+
+body{
+    background-color:#9fc5c5;
+}
+
+#save{
+    background-color: #025c5c;
+    padding: 6px 12px;
+    font-family: Noto Sans JP, sans-serif;
+    border: 1px solid #499191;
+    color:#9fc5c5;
+    border-radius: 2px;
+}
+
+#addFile{
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 1px solid #025c5c;
+    color: #025c5c;
+}
+
+#addPicture{
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 1px solid #025c5c;
+    color: #025c5c;
+}
+
+#notefield{
+    font-family: Noto Sans JP, sans-serif;
+    width: 400px;
+    height: 300px;
+}
