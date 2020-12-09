@@ -53,123 +53,6 @@ function renderTitleList() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function deleteFunction() {
-    let deleteButtons = $(".deleteButton");
-    deleteButtons.empty();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function deleteFunction() {
     let deleteButtons = $(".deleteButton");
     deleteButtons.empty();
@@ -183,6 +66,8 @@ function deleteFunction() {
         })
     }
 }
+
+
 async function deleteNote(note) {
     
     let noteToDelete = {
