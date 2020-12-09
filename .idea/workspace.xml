@@ -12,7 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="aa8674ce-5700-44c6-9ee7-0ea87ed5f90c" name="Default Changelist" comment="Added values to notes, created sqlite queries">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/newNote.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/newNote.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

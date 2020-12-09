@@ -38,7 +38,7 @@ public class Database {
     public void updateNote(Notes note) {
 
         try {
-            PreparedStatement stmt = conn.prepareStatement("UPDATE posts SET title = ?, text = ?, content = ?, timestamp = ?, imageUrl = ? WHERE id = ?");
+            PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET title = ?, text = ?, content = ?, timestamp = ?, imageUrl = ? WHERE id = ?");
             stmt.setString(1, note.getTitle());
             stmt.setString(2, note.getText());
             stmt.setInt(3, note.getTimestamp());
@@ -101,14 +101,14 @@ public class Database {
 
             stmt.executeUpdate();
         } catch (Exception e) {
-           e.printStackTrace();
+            e.printStackTrace();
         }
     }
 
     public void deleteNotes(Notes note) {
 
         try {
-            PreparedStatement stmt = conn.prepareStatement("DELETE FROM notes WHERE i = ?");
+            PreparedStatement stmt = conn.prepareStatement("DELETE FROM notes WHERE id = ?");
             stmt.setInt(1, note.getId());
 
             stmt.executeUpdate();

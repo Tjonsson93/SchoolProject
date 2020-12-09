@@ -32,7 +32,6 @@ public class Main {
             System.out.println(notes.toString());
 
             db.createNote(notes);
-            res.send("post ok");
         });
 
         app.post("/api/file-upload", (req, res) -> {
@@ -48,10 +47,16 @@ public class Main {
             res.send(imageUrl);
         });
 
-        app.delete("rest/notes:id", (req, res) -> {
+        app.delete("/rest/notes:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
 
             db.deleteNotes(notes);
+        });
+
+        app.put("/rest/notes:id", (req, res) -> {
+            Notes notes = (Notes) req.getBody(Notes.class);
+            db.updateNote(notes);
+            res.send("Note updated");
         });
 
         try {
