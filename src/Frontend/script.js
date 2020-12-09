@@ -192,5 +192,4 @@ async function deleteNote(note) {
         method: "DELETE",
         body: JSON.stringify(noteToDelete)
     });
-}
-
+}}
