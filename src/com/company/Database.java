@@ -1,5 +1,6 @@
 package com.company;
 
+
 import express.utils.Utils;
 import org.apache.commons.fileupload.FileItem;
 
@@ -112,12 +113,12 @@ public class Database {
     public void createNote(Notes note) {
 
         try {
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO notes (title, text, timestamp, imageUrl, fileUrl) VALUES (?, ?, ?, ?, ?)");
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO notes (title, text, timestamp, imageUrl) VALUES (?, ?, ?, ?)");
             stmt.setString(1, note.getTitle());
             stmt.setString(2, note.getText());
             stmt.setInt(3, note.getTimestamp());
             stmt.setString(4, note.getImageUrl());
-            stmt.setString(5, note.getFileUrl());
+
 
             stmt.executeUpdate();
         } catch (Exception e) {
