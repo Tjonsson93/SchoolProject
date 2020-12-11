@@ -38,12 +38,11 @@ public class Database {
     public void updateNote(Notes note) {
 
         try {
-            PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET title = ?, text = ?, content = ?, timestamp = ?, imageUrl = ? WHERE id = ?");
+            PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET title = ?, text = ?, timestamp = ?, imageUrl = ? WHERE id = ?");
             stmt.setString(1, note.getTitle());
             stmt.setString(2, note.getText());
             stmt.setInt(3, note.getTimestamp());
             stmt.setString(4, note.getImageUrl());
-            stmt.setString(5, note.getFileUrl());
 
             stmt.executeUpdate();
         } catch (SQLException e) {

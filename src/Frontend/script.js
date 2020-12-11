@@ -74,6 +74,4 @@ async function getNotes() {
     renderList();
 }
 
-
-
 getNotes();
