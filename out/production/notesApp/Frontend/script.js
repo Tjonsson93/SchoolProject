@@ -1,122 +1,57 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function deleteFunction() {
-    let deleteButtons = $(".deleteButton");
-    deleteButtons.empty();
-
-    for (let i = 0; i < deleteButtons.length; i++) {
-        $(deleteButtons[i]).click(function () {
-            let parentElement = this.parentElement;
-            parentElement.style.display = "none";
-            deleteNote(note[i]);
-            notes.splice(i,1); 
-        })
-    }
-}
-async function deleteNote(note) {
+let notes = [];
+
+function addNote() {
+    let titleInput = $("#titleInput").val();
+    let textInput = $("#noteField").val();
     
-    let noteToDelete = {
-        id: notes.id,
+    if (titleInput.length > 0 && textInput.length > 0) {
+
+        let note = {
+            title: titleInput,
+            text: textInput
+        }
+
+        notes.push(note);
+       
+    } else {
+        alert("Please enter title and text.");
     }
-    let result = await fetch("/rest/items/id", {
-        method: "DELETE",
-        body: JSON.stringify(noteToDelete)
-    });
+
+    renderList();
+    renderTitleList();
 }
 
+function renderList() {
+    let list = $("#notesList");
+    list.empty();
+    
+    let noteElementList = notes.map(function (note, index) {
+        return `
+        <li>
+        <h3>${note.title}</h3> <br>
+        <p>${note.text}</p>
+        <button class="trashBtn" onclick="deleteNote(${index})">Delete</button>
+        </li>`;
+    });
+
+    list.append(noteElementList.join(""));
+}
+
+function renderTitleList() {
+    let listOfTitles = $("#titleList");
+    listOfTitles.empty();
+    
+    for (everyTitle of notes) {
+        listOfTitles.append(`<li><h4> ${everyTitle.title} </h4> </li>`);
+    }
+    
+}
+
+async function deleteNote(noteIndex) {
+    
+    let note = notes[noteIndex];
+
+    await fetch("/rest/notes:id", { method: "DELETE", body: JSON.stringify(notes)
+});
+    notes.splice(noteIndex, 1);
+}

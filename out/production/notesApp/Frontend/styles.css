@@ -1,0 +1,73 @@
+nav{
+    text-align: center;
+    background-color: #9fc5c5;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1516728043722-b394cb2f689e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{ 
+    font-family: Noto Sans JP, sans-serif;
+    text-align: center;
+    width: 100%;
+    background-color: #025c5c48;
+}
+
+a{ 
+    font-family: Noto Sans JP, sans-serif;
+    color: #025c5c;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+h1 {
+    padding: 20px;
+}
+
+h1, h2, h3, button{
+    color: #025c5c;
+    text-align: center;
+}
+
+
+body{
+    background-color:#9fc5c5;
+}
+
+#save{
+    background-color: #025c5c;
+    padding: 6px 12px;
+    font-family: Noto Sans JP, sans-serif;
+    border: 1px solid #499191;
+    color:#9fc5c5;
+    border-radius: 2px;
+}
+
+button{
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 1px solid #025c5c;
+    color: #025c5c;
+}
+
+#addPicture{
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 1px solid #025c5c;
+    color: #025c5c;
+}
+
+#notefield{
+    font-family: Noto Sans JP, sans-serif;
+    width: 400px;
+    height: 300px;
+}
+
+.addNotes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

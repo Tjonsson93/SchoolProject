@@ -1,6 +1,5 @@
 package com.company;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import express.utils.Utils;
 import org.apache.commons.fileupload.FileItem;
 
@@ -75,6 +74,27 @@ public class Database {
         try {
             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM notes WHERE id = ?");
             stmt.setInt(1, id);
+
+            ResultSet rs = stmt.executeQuery();
+
+            Notes[] notesFromRs = (Notes[]) Utils.readResultSetToObject(rs, Notes[].class);
+
+            note = notesFromRs[0];
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return note;
+    }
+
+    public Notes getNoteByTitle(int id, String title) {
+        Notes note = null;
+
+        try {
+            PreparedStatement stmt = conn.prepareStatement("SELECT title FROM notes WHERE id = ?");
+            stmt.setInt(1, id);
+            stmt.setString(2, title);
 
             ResultSet rs = stmt.executeQuery();
 

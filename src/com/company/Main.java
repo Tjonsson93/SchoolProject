@@ -14,6 +14,19 @@ public class Main {
         Express app = new Express();
         Database db = new Database();
 
+        app.post("/api/file-upload", (req, res) -> {
+            String imageUrl = null;
+
+            try {
+                List<FileItem> files = req.getFormData("files");
+                imageUrl = db.uploadImage(files.get(0));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            res.send(imageUrl);
+        });
+
         app.get("/rest/notes", (req, res) -> {
             List<Notes> notes = db.getNotes();
             res.json(notes);
@@ -34,19 +47,6 @@ public class Main {
             db.createNote(notes);
         });
 
-        app.post("/api/file-upload", (req, res) -> {
-            String imageUrl = null;
-
-            try {
-                List<FileItem> files = req.getFormData("files");
-                imageUrl = db.uploadImage(files.get(0));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            res.send(imageUrl);
-        });
-
         app.delete("/rest/notes:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
 
@@ -65,7 +65,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        /*app.listen(3000);
-        System.out.println("server started at port 3000");*/
+        app.listen(5500);
+        System.out.println("server started at port 3000");
     }
 }

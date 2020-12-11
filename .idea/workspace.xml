@@ -11,7 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa8674ce-5700-44c6-9ee7-0ea87ed5f90c" name="Default Changelist" comment="Added values to notes, created sqlite queries">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoteApp.db" beforeDir="false" afterPath="$PROJECT_DIR$/NoteApp.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/newNote.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/newNote.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/script.js" afterDir="false" />
@@ -50,6 +52,10 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Skrivbord/java-express-tutorial-file-upload" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -112,6 +118,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
     <MESSAGE value="Added values to notes, created sqlite queries" />
     <option name="LAST_COMMIT_MESSAGE" value="Added values to notes, created sqlite queries" />
   </component>
@@ -124,26 +133,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1259" y="214" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607419086136" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1607436222880">
+    <state x="1120" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607551193702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607436222880" />
-    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1607439331876">
+    <state x="1120" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607551193702" />
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1607595532929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607439331876" />
-    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1607439331876">
+    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607595532929" />
+    <state width="1877" height="273" key="GridCell.Tab.0.bottom" timestamp="1607677917605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607439331876" />
-    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1607439331876">
+    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
+    <state width="1877" height="273" key="GridCell.Tab.0.center" timestamp="1607677917605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607439331876" />
-    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1607439331876">
+    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
+    <state width="1877" height="273" key="GridCell.Tab.0.left" timestamp="1607677917604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="278" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607439331876" />
+    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917604" />
+    <state width="1877" height="273" key="GridCell.Tab.0.right" timestamp="1607677917605">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
+    <state x="830" y="94" key="SettingsEditor" timestamp="1607636602287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="830" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607636602287" />
     <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1607422107672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -152,10 +169,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1257" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607422088024" />
-    <state x="1031" y="143" key="new project wizard" timestamp="1607436227209">
+    <state x="1031" y="143" key="new project wizard" timestamp="1607595566753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1031" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607436227209" />
+    <state x="1031" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607595566753" />
     <state x="1102" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1607438308279">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
