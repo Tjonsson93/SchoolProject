@@ -15,13 +15,13 @@ function addNote() {
         }
 
         notes.push(note);
-       
+        addItemToDB(note);
     } else {
         alert("Please enter title and text.");
     }
 
     renderList();
-    renderTitleList();
+    
 }
 
 
@@ -31,31 +31,27 @@ function renderList() {
     list.empty();
     
      for (everyNote of notes) {
-        list.append(`<li> <h3>${everyNote.title}</h3> <br> <p>${everyNote.text}</p></li>`);
+        list.append(`<li> <h3>${everyNote.title}</h3> <br> 
+        <p>${everyNote.text}</p>
+        <button class="deleteButton">Delete</button></li>`);
+
+        
     }
-    
-
-}
-
-
-function renderTitleList() {
-    let listOfTitles = $("#titleList");
-    listOfTitles.empty();
-    
-    for (everyTitle of notes) {
-        listOfTitles.append(`<li><h4> ${everyTitle.title} </h4> </li>`);
-    }
-    
+    deleteFunction();
 }
 
 
 
-
-
+async function deleteNote(note) {
+    
+    let result = await fetch("/rest/notes:id", {
+        method: "DELETE",
+        body: JSON.stringify(note)
+    });
+}
 
 function deleteFunction() {
     let deleteButtons = $(".deleteButton");
-    deleteButtons.empty();
 
     for (let i = 0; i < deleteButtons.length; i++) {
         $(deleteButtons[i]).click(function () {
@@ -68,13 +64,21 @@ function deleteFunction() {
 }
 
 
-async function deleteNote(note) {
-    
-    let noteToDelete = {
-        id: notes.id,
-    }
-    let result = await fetch("/rest/items/id", {
-        method: "DELETE",
-        body: JSON.stringify(noteToDelete)
+async function addItemToDB(note) {
+    let result = await fetch('/rest/notes', {
+        method: "POST",
+        body: JSON.stringify(note)
     });
 }
+
+
+async function getNotes() {
+    let result = await fetch('/rest/notes');
+    notes = await result.json();
+
+    renderList();
+}
+
+
+
+getNotes();
