@@ -47,13 +47,13 @@ public class Main {
             db.createNote(notes);
         });
 
-        app.delete("/rest/notes:id", (req, res) -> {
+        app.delete("/rest/notes/:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
-
+            System.out.println("notes"  + notes.toString());
             db.deleteNotes(notes);
         });
 
-        app.put("/rest/notes:id", (req, res) -> {
+        app.put("/rest/notes/:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
             db.updateNote(notes);
             res.send("Note updated");

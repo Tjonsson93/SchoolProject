@@ -7,7 +7,7 @@ public class Notes {
     private String text;
     private int timestamp;
     private String imageUrl;
-    
+
 
     public Notes() { }
 
