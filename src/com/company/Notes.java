@@ -7,6 +7,7 @@ public class Notes {
     private String text;
     private int timestamp;
     private String imageUrl;
+    
 
     public Notes() { }
 
@@ -21,6 +22,7 @@ public class Notes {
         this.text = text;
         this.timestamp = timestamp;
         this.imageUrl = imageUrl;
+
     }
 
     public Notes(int id, String title, String text, int timestamp, String imageUrl) {
@@ -30,6 +32,7 @@ public class Notes {
         this.timestamp = timestamp;
         this.imageUrl = imageUrl;
     }
+
 
     public int getId() {
         return id;
@@ -82,4 +85,8 @@ public class Notes {
                 ", imageUrl='" + imageUrl + '\'' +
                 '}';
     }
+
+
 }
+
+
