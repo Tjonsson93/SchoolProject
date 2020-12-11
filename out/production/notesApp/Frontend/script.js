@@ -12,46 +12,70 @@ function addNote() {
         }
 
         notes.push(note);
-       
+        addItemToDB(note);
     } else {
         alert("Please enter title and text.");
     }
 
     renderList();
-    renderTitleList();
+    
 }
 
 function renderList() {
     let list = $("#notesList");
     list.empty();
     
-    let noteElementList = notes.map(function (note, index) {
-        return `
-        <li>
-        <h3>${note.title}</h3> <br>
-        <p>${note.text}</p>
-        <button class="trashBtn" onclick="deleteNote(${index})">Delete</button>
-        </li>`;
-    });
+     for (everyNote of notes) {
+        list.append(`<li> <h3>${everyNote.title}</h3> <br> 
+        <p>${everyNote.text}</p>
+        <button class="deleteButton">Delete</button></li>`);
 
-    list.append(noteElementList.join(""));
-}
-
-function renderTitleList() {
-    let listOfTitles = $("#titleList");
-    listOfTitles.empty();
-    
-    for (everyTitle of notes) {
-        listOfTitles.append(`<li><h4> ${everyTitle.title} </h4> </li>`);
+        
     }
-    
+    deleteFunction();
 }
 
-async function deleteNote(noteIndex) {
-    
-    let note = notes[noteIndex];
 
-    await fetch("/rest/notes:id", { method: "DELETE", body: JSON.stringify(notes)
-});
-    notes.splice(noteIndex, 1);
+
+async function deleteNote(note) {
+    
+    let result = await fetch("/rest/notes/id", {
+        method: "DELETE",
+        body: JSON.stringify(note)
+    });
 }
+
+function deleteFunction() {
+    let deleteButtons = $(".deleteButton");
+
+    for (let i = 0; i < deleteButtons.length; i++) {
+        $(deleteButtons[i]).click(function () {
+            let parentElement = this.parentElement;
+            parentElement.style.display = "none";
+            console.log(notes[i]);
+            deleteNote(notes[i]);
+            notes.splice(i,1); 
+        });
+    }
+}
+
+
+async function addItemToDB(note) {
+    let result = await fetch('/rest/notes', {
+        method: "POST",
+        body: JSON.stringify(note)
+    });
+}
+
+
+async function getNotes() {
+    let result = await fetch('/rest/notes');
+    notes = await result.json();
+
+    renderList();
+}
+
+
+
+getNotes();
+alert("hej")
