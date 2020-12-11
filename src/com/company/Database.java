@@ -44,6 +44,7 @@ public class Database {
             stmt.setInt(3, note.getTimestamp());
             stmt.setString(4, note.getImageUrl());
 
+
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

@@ -39,7 +39,7 @@ function renderList() {
 
 async function deleteNote(note) {
     
-    let result = await fetch("/rest/notes:id", {
+    let result = await fetch("/rest/notes/id", {
         method: "DELETE",
         body: JSON.stringify(note)
     });
@@ -52,9 +52,10 @@ function deleteFunction() {
         $(deleteButtons[i]).click(function () {
             let parentElement = this.parentElement;
             parentElement.style.display = "none";
+            console.log(notes[i]);
             deleteNote(notes[i]);
             notes.splice(i,1); 
-        })
+        });
     }
 }
 
@@ -75,3 +76,4 @@ async function getNotes() {
 }
 
 getNotes();
+alert("hej")
