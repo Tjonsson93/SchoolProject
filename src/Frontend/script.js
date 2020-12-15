@@ -60,11 +60,11 @@ function renderTitles() {
 // searchbar function
 $(function(){
 
-    $('input[type="text"]').keyup(function(){
+    $('#searchbar').keyup(function(){
         
         var searchText = $(this).val();
         
-        $('ul > li').each(function(){
+        $('#notesList > li').each(function(){
             
             var currentLiText = $(this).text(),
                 showCurrentLi = currentLiText.indexOf(searchText) !== -1;
