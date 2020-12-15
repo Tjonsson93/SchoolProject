@@ -1,5 +1,5 @@
 let notes = [];
-let titlelist = [];
+
 
 
 //adding a new note to the list.
@@ -42,13 +42,14 @@ function renderList() {
     deleteFunction();
 }
 
+//renders titles in different list
 function renderTitles() {
     let list = $("#titleList");
     list.empty();
     for (everyNote of notes) {
         
         
-        list.append(`<li id="titleLink"><a href="">${everyNote.title}</a></li>`);
+        list.append(`<li id="titleLink">${everyNote.title}</li>`);
         
         
         
@@ -56,14 +57,14 @@ function renderTitles() {
     
 }
 
-
+// searchbar function
 $(function(){
 
-    $('input[type="text"]').keyup(function(){
+    $('#searchbar').keyup(function(){
         
         var searchText = $(this).val();
         
-        $('ul > li').each(function(){
+        $('#notesList > li').each(function(){
             
             var currentLiText = $(this).text(),
                 showCurrentLi = currentLiText.indexOf(searchText) !== -1;
@@ -77,9 +78,19 @@ $(function(){
 
 
 
+//drop down menu
+$(function() {
+    $("#filterText").change(function() {
+      var choice = $('#filterText').val();
+      if (choice != "all") $("ul").show().not('#' + choice).hide();
+      else $("ul").show();
+    });
+});
 
 
 
+
+//deletes from notes
 function deleteFunction() {
     let deleteButtons = $(".deleteButton");
     

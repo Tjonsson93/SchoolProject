@@ -3,7 +3,22 @@ let notes = [];
 
 
 //adding a new note to the list.
-function addNote() {
+async function addNote(e) {
+    e.preventDefault();
+
+    let files = document.querySelector('input[type=file]').files;
+    let formData = new FormData();
+
+    for(let file of files) {
+        formData.append('files', file, file.name);
+    }
+
+    let uploadResult = await fetch('/api/file-upload',{
+        method: 'POST',
+        body: formData
+    });
+    let imageUrl = await uploadResult.text();
+
     let titleInput = $("#titleInput").val();
     let textInput = $("#noteField").val();
     
