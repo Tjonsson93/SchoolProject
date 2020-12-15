@@ -23,18 +23,36 @@ a{
     padding: 10px 20px;
 }
 
-h1 {
-    padding: 20px;
-}
 
 h1, h2, h3, button{
     color: #025c5c;
     text-align: center;
+    padding: 1rem;
+}
+h1 {
+    padding: 20px;
+}
+
+
+h3 {
+    font-size: 25px;
+    margin: 20px;
+    padding: 1px 10px;
+    background-color: #295e5e5b;
+    border-radius: 4px;
 }
 
 
 body{
     background-color:#9fc5c5;
+}
+
+#titleInput{
+    border-radius: 5px;
+    border: 1px solid #025c5c;
+    width: 14rem;
+    padding: 0.3rem;
+    font-size: 16px;
 }
 
 #save{
@@ -48,14 +66,16 @@ body{
 
 button{
     padding: 6px 12px;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 1px solid #025c5c;
     color: #025c5c;
+    background: #b8d8d8e0;
+    
 }
 
 #addPicture{
     padding: 6px 12px;
-    border-radius: 2px;
+    border-radius: 5px;
     border: 1px solid #025c5c;
     color: #025c5c;
 }
@@ -66,8 +86,28 @@ button{
     height: 300px;
 }
 
+
 .addNotes{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+
+li {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #025c5c;
+
+}
+
+.search-bar {
+    padding: 1rem;
+}
+
+#searchInput {
+    outline: none; 
+    border-radius: 5px;
+    border: 1px solid #025c5c;
 }
