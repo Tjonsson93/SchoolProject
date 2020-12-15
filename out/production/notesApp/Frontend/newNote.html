@@ -25,14 +25,18 @@
     
     <section>
         <h2>My Notes</h2>
+        
         <div class="addNotes">
-            
                 <input id="titleInput" name="title" type="text" placeholder="title">
                 <br>
                 <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
                 <br>
-                <button id="addFile">Add file</button>
+                <button id="addFile">Add file</button><br>
                 <button onclick="addNote()" id="button">Save</button>
+                
+                <div class="search-bar">
+                    <input id="search" type ="text" placeholder="Search for..">
+                </div>
 
                 <div>
                     <h3>My Notes</h3>
@@ -42,11 +46,12 @@
                 </div>
                 
                 <div>
-                    <h2>My Titles</h2>
+                    <h3>My Titles</h3>
                     <ul id="titleList">
-    
+
                     </ul>
                 </div>
+
             </div>
     
         </section>

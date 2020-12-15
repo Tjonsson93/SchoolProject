@@ -66,6 +66,6 @@ public class Main {
         }
 
         app.listen(5500);
-        System.out.println("server started at port 3000");
+        System.out.println("server started at port 5000");
     }
 }
