@@ -5,19 +5,19 @@ public class Notes {
     private int id;
     private String title;
     private String text;
-    private int timestamp;
+    private long timestamp;
     private String imageUrl;
 
 
     public Notes() { }
 
-    public Notes(String title, String text, int timestamp) {
+    public Notes(String title, String text, long timestamp) {
         this.title = title;
         this.text = text;
         this.timestamp = timestamp;
     }
 
-    public Notes(String title, String text, int timestamp, String imageUrl) {
+    public Notes(String title, String text, long timestamp, String imageUrl) {
         this.title = title;
         this.text = text;
         this.timestamp = timestamp;
@@ -25,7 +25,7 @@ public class Notes {
 
     }
 
-    public Notes(int id, String title, String text, int timestamp, String imageUrl) {
+    public Notes(int id, String title, String text, long timestamp, String imageUrl) {
         this.id = id;
         this.title = title;
         this.text = text;
@@ -58,11 +58,11 @@ public class Notes {
         this.text = text;
     }
 
-    public int getTimestamp() {
+    public long getTimestamp() {
         return timestamp;
     }
 
-    public void setTimestamp(int timestamp) {
+    public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
     }
 
