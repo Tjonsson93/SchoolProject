@@ -6,7 +6,7 @@ public class Notes {
     private String title;
     private String text;
     private int timestamp;
-    private String imageUrl;
+    private String fileUrl;
 
 
     public Notes() { }
@@ -21,7 +21,7 @@ public class Notes {
         this.title = title;
         this.text = text;
         this.timestamp = timestamp;
-        this.imageUrl = imageUrl;
+        this.fileUrl = imageUrl;
 
     }
 
@@ -30,7 +30,7 @@ public class Notes {
         this.title = title;
         this.text = text;
         this.timestamp = timestamp;
-        this.imageUrl = imageUrl;
+        this.fileUrl = imageUrl;
     }
 
 
@@ -66,12 +66,12 @@ public class Notes {
         this.timestamp = timestamp;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getFileUrl() {
+        return fileUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setFileUrl(String fileUrl) {
+        this.fileUrl = fileUrl;
     }
 
 
@@ -82,7 +82,7 @@ public class Notes {
                 ", title='" + title + '\'' +
                 ", text='" + text + '\'' +
                 ", timestamp=" + timestamp +
-                ", imageUrl='" + imageUrl + '\'' +
+                ", imageUrl='" + fileUrl + '\'' +
                 '}';
     }
 

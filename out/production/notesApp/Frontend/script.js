@@ -16,9 +16,7 @@ function addNote() {
     } else {
         alert("Please enter title and text.");
     }
-
-    renderList();
-    
+    renderList();    
 }
 
 function renderList() {
@@ -28,12 +26,12 @@ function renderList() {
      for (everyNote of notes) {
         list.append(`<li> <h3>${everyNote.title}</h3> <br> 
         <p>${everyNote.text}</p>
-        <button class="deleteButton">Delete</button></li>`);
+        <button class="deleteButton" onClick="window.location.reload()">Delete</button></li>`);
 
     }
     deleteFunction();
 }
-//Delete function
+
 async function deleteNote(note) {
     
     let result = await fetch("/rest/notes/id", {
@@ -54,13 +52,16 @@ function deleteFunction() {
             notes.splice(i,1); 
         });
     }
+
 }
+
 async function addItemToDB(note) {
     let result = await fetch('/rest/notes', {
         method: "POST",
         body: JSON.stringify(note)
     });
 }
+
 async function getNotes() {
     let result = await fetch('/rest/notes');
     notes = await result.json();
@@ -69,4 +70,3 @@ async function getNotes() {
 }
 
 getNotes();
-alert("hej")

@@ -14,17 +14,25 @@ public class Main {
         Express app = new Express();
         Database db = new Database();
 
+        app.post("/rest/notes", (req, res) -> {
+            Notes notes = (Notes) req.getBody(Notes.class);
+
+            System.out.println(notes.toString());
+
+            db.createNote(notes);
+        });
+
         app.post("/api/file-upload", (req, res) -> {
-            String imageUrl = null;
+            String fileUrl = null;
 
             try {
                 List<FileItem> files = req.getFormData("files");
-                imageUrl = db.uploadImage(files.get(0));
+                fileUrl = db.uploadFile(files.get(0));
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
-            res.send(imageUrl);
+            res.send(fileUrl);
         });
 
         app.get("/rest/notes", (req, res) -> {
@@ -39,24 +47,16 @@ public class Main {
             res.json(notes);
         });
 
-        app.post("/rest/notes", (req, res) -> {
-           Notes notes = (Notes) req.getBody(Notes.class);
-
-            System.out.println(notes.toString());
-
-            db.createNote(notes);
+        app.put("/rest/notes/:id", (req, res) -> {
+            Notes notes = (Notes) req.getBody(Notes.class);
+            db.updateNote(notes);
+            res.send("Note updated");
         });
 
         app.delete("/rest/notes/:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
             System.out.println("notes"  + notes.toString());
             db.deleteNotes(notes);
-        });
-
-        app.put("/rest/notes/:id", (req, res) -> {
-            Notes notes = (Notes) req.getBody(Notes.class);
-            db.updateNote(notes);
-            res.send("Note updated");
         });
 
         try {

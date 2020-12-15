@@ -21,35 +21,33 @@ public class Database {
             throwables.printStackTrace();
         }
     }
+    public void createNote(Notes note) {
 
-    public String uploadImage(FileItem image) {
-        String imageUrl = "/images/" + image.getName();
+        try {
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO notes (title, text, timestamp, fileUrl) VALUES (?, ?, ?, ?)");
+            stmt.setString(1, note.getTitle());
+            stmt.setString(2, note.getText());
+            stmt.setInt(3, note.getTimestamp());
+            stmt.setString(4, note.getFileUrl());
 
-        try (var os = new FileOutputStream(Paths.get("src/Frontend" + imageUrl).toString())) {
-            os.write(image.get());
+
+            stmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String uploadFile(FileItem file) {
+        String fileUrl = "/files/" + file.getName();
+
+        try (var os = new FileOutputStream(Paths.get("src/Frontend" + fileUrl).toString())) {
+            os.write(file.get());
         } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
 
-        return imageUrl;
-    }
-
-    public void updateNote(Notes note) {
-
-        try {
-            PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET title = ?, text = ?, timestamp = ?, imageUrl = ? WHERE id = ?");
-            stmt.setString(1, note.getTitle());
-            stmt.setString(2, note.getText());
-            stmt.setInt(3, note.getTimestamp());
-            stmt.setString(4, note.getImageUrl());
-
-
-            stmt.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
+        return fileUrl;
     }
 
     public List<Notes> getNotes() {
@@ -89,41 +87,21 @@ public class Database {
         return note;
     }
 
-    public Notes getNoteByTitle(int id, String title) {
-        Notes note = null;
+    public void updateNote(Notes note) {
 
         try {
-            PreparedStatement stmt = conn.prepareStatement("SELECT title FROM notes WHERE id = ?");
-            stmt.setInt(1, id);
-            stmt.setString(2, title);
-
-            ResultSet rs = stmt.executeQuery();
-
-            Notes[] notesFromRs = (Notes[]) Utils.readResultSetToObject(rs, Notes[].class);
-
-            note = notesFromRs[0];
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return note;
-    }
-
-    public void createNote(Notes note) {
-
-        try {
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO notes (title, text, timestamp, imageUrl) VALUES (?, ?, ?, ?)");
+            PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET title = ?, text = ?, timestamp = ?, fileUrl = ? WHERE id = ?");
             stmt.setString(1, note.getTitle());
             stmt.setString(2, note.getText());
             stmt.setInt(3, note.getTimestamp());
-            stmt.setString(4, note.getImageUrl());
+            stmt.setString(4, note.getFileUrl());
 
 
             stmt.executeUpdate();
-        } catch (Exception e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
+
     }
 
     public void deleteNotes(Notes note) {
