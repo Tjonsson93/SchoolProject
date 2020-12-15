@@ -124,6 +124,65 @@
     <MESSAGE value="Added values to notes, created sqlite queries" />
     <option name="LAST_COMMIT_MESSAGE" value="Added values to notes, created sqlite queries" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1607696783048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607696783048" />
+    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607437088830" />
+    <state x="1259" y="214" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1607419086136">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1259" y="214" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607419086136" />
+    <state x="1120" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607551193702">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1120" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607551193702" />
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1607595532929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607595532929" />
+    <state width="1877" height="163" key="GridCell.Tab.0.bottom" timestamp="1607978194703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
+    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
+    <state width="1877" height="163" key="GridCell.Tab.0.center" timestamp="1607978194703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="163" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
+    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
+    <state width="1877" height="163" key="GridCell.Tab.0.left" timestamp="1607978194703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="163" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
+    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917604" />
+    <state width="1877" height="163" key="GridCell.Tab.0.right" timestamp="1607978194703">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="163" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
+    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
+    <state x="830" y="94" key="SettingsEditor" timestamp="1607636602287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="830" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607636602287" />
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1607422107672">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607422107672" />
+    <state x="1257" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607422088024">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1257" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607422088024" />
+    <state x="1031" y="143" key="new project wizard" timestamp="1607595566753">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1031" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607595566753" />
+    <state x="1102" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1607438308279">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1102" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607438308279" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SchoolProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1607697018901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>

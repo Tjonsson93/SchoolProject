@@ -60,7 +60,7 @@ public class Main {
         });
 
         try {
-            app.use(Middleware.statics(Paths.get("src/frontend").toString()));
+            app.use(Middleware.statics(Paths.get("src/Frontend").toString()));
         } catch (IOException e) {
             e.printStackTrace();
         }
