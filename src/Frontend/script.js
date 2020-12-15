@@ -30,13 +30,10 @@ function renderList() {
         <p>${everyNote.text}</p>
         <button class="deleteButton">Delete</button></li>`);
 
-        
     }
     deleteFunction();
 }
-
-
-
+//Delete function
 async function deleteNote(note) {
     
     let result = await fetch("/rest/notes/id", {
@@ -58,24 +55,18 @@ function deleteFunction() {
         });
     }
 }
-
-
 async function addItemToDB(note) {
     let result = await fetch('/rest/notes', {
         method: "POST",
         body: JSON.stringify(note)
     });
 }
-
-
 async function getNotes() {
     let result = await fetch('/rest/notes');
     notes = await result.json();
 
     renderList();
 }
-
-
 
 getNotes();
 alert("hej")
