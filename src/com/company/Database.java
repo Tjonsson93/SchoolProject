@@ -7,6 +7,7 @@ import org.apache.commons.fileupload.FileItem;
 import java.io.FileOutputStream;
 import java.nio.file.Paths;
 import java.sql.*;
+import java.time.Instant;
 import java.util.List;
 
 public class Database {
@@ -41,7 +42,7 @@ public class Database {
             PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET title = ?, text = ?, timestamp = ?, imageUrl = ? WHERE id = ?");
             stmt.setString(1, note.getTitle());
             stmt.setString(2, note.getText());
-            stmt.setInt(3, note.getTimestamp());
+            stmt.setLong(3, note.getTimestamp());
             stmt.setString(4, note.getImageUrl());
 
 
@@ -116,7 +117,7 @@ public class Database {
             PreparedStatement stmt = conn.prepareStatement("INSERT INTO notes (title, text, timestamp, imageUrl) VALUES (?, ?, ?, ?)");
             stmt.setString(1, note.getTitle());
             stmt.setString(2, note.getText());
-            stmt.setInt(3, note.getTimestamp());
+            stmt.setLong(3, Instant.now().toEpochMilli());
             stmt.setString(4, note.getImageUrl());
 
 
