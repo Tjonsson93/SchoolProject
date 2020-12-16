@@ -35,17 +35,18 @@
         
         <input id="searchbar" type="text" />
         
-        
+        <form onsubmit="addNote(event)">
         <div class="addNotes">
             
                 <input id="titleInput" name="title" type="text" placeholder="title">
                 <br>
                 <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
                 <br>
-                <button id="addFile">Add file</button>
-                <button onclick="addNote()" id="button">Save</button>
+                <input type="file" accept="image/*, .txt, .pdf, .doc, .docx" placeholder="Välj fil">
+                <button type="submit">Add note</button>
 
                 <div>
+        </form>
                     <h3>My Notes</h3>
                     <ul id="notesList">
                         

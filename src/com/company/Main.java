@@ -15,16 +15,16 @@ public class Main {
         Database db = new Database();
 
         app.post("/api/file-upload", (req, res) -> {
-            String imageUrl = null;
+            String myFile = null;
 
             try {
                 List<FileItem> files = req.getFormData("files");
-                imageUrl = db.uploadImage(files.get(0));
+                myFile = db.uploadFile(files.get(0));
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
-            res.send(imageUrl);
+            res.json(myFile);
         });
 
         app.get("/rest/notes", (req, res) -> {
@@ -40,7 +40,7 @@ public class Main {
         });
 
         app.post("/rest/notes", (req, res) -> {
-           Notes notes = (Notes) req.getBody(Notes.class);
+            Notes notes = (Notes) req.getBody(Notes.class);
 
             System.out.println(notes.toString());
 
