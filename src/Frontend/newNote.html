@@ -6,62 +6,52 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js" defer></script>
+    <style type="text/css">* {cursor: url(https://ani.cursors-4u.net/others/oth-9/oth838.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2013/04/30/cute-black-pencil.html" target="_blank" title="Cute Black Pencil"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Cute Black Pencil" style="position:absolute; top: 0px; right: 0px;" /></a>
     <title>Document</title>
 </head>
 
-<body>
-    
+<body class="newNote">
     <header>
         <h1>Awesome Notes</h1>
     </header>
-    <aside>    
+    
+    <div class="sidebar">
         <nav>
-            <a href="/home.html">Home</a>
-        
-            <a href="/newNote.html">Create new</a>
+            <button class="homeBtn"><a href="/home.html"><i class="fa fa-home"></i></a></button>
         </nav>
-    </aside>
-    
-    <section>
-        <h2>My Notes</h2>
-        <select id='filterText'>
-            <option value="all"> All </option>
-            <option value="1">Value 1</option>
-            <option value="2">Value 2</option>
-            <option value="3">Value 3</option>
-         </select>
-        
-        
-        <input id="searchbar" type="text" />
-        
-        <form onsubmit="addNote(event)">
-        <div class="addNotes">
-            
-                <input id="titleInput" name="title" type="text" placeholder="title">
-                <br>
-                <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
-                <br>
-                <input type="file" accept="image/*, .txt, .pdf, .doc, .docx" placeholder="Välj fil">
-                <button type="submit">Add note</button>
-
-                <div>
-        </form>
-                    <h3>My Notes</h3>
-                    <ul id="notesList">
-                        
-                    </ul>
-                </div>
+        <section>
+            <select id='filterText'>
+                <option value="all"> All </option>
+                <option value="1">Value 1</option>
+                <option value="2">Value 2</option>
+                <option value="3">Value 3</option>
+                <input type="text" placeholder="Search for...">
                 
-                <div>
-                    <h2>My Titles</h2>
-                    <ul id="titleList">
-    
-                    </ul>
-                </div>
-            </div>
-    
+            </select>
         </section>
+        
+        
+        <h4>My Titles</h4>
+        <ul id="titleList"></ul> 
+    </div>            
     
-    </body>
-    </html>
+    <div class="addNotes">
+        <input id="titleInput" name="title" type="text" placeholder="Title">
+        <br>
+        <textarea name="note" id="noteField" cols="30" rows="10" placeholder="Write here..."></textarea>
+        <br>
+        <div class ="buttons">
+            <button onclick="addNote()" id="button">Save</button>
+            <button id="addFile">Add file</button>
+        </div>
+        
+        <div>
+            <h2>My Notes</h2>
+            <ul id="notesList"></ul>
+        </div>
+    </div>>
+    
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
