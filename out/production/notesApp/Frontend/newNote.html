@@ -25,17 +25,32 @@
     
     <section>
         <h2>My Notes</h2>
-        <input type="text" />
+        
+        
+        
+        <select id='filterText'>
+            <option value="all">Sort By...</option>
+            <option value="1">Sort A-Ö</option>
+            <option value="2">Sort Ö-A</option>
+            <option value="3">Sort by latest</option>
+            <option value="4">Sort by oldest</option>
+        </select>
+         
+        
+        <input id="searchbar" type="text" />
         
         
         <div class="addNotes">
-            
-                <input id="titleInput" name="title" type="text" placeholder="title">
-                <br>
-                <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
-                <br>
-                <button id="addFile">Add file</button>
-                <button onclick="addNote()" id="button">Save</button>
+                <form id="form"action="" method="post">
+                    <input id="titleInput" name="title" type="text" placeholder="title">
+                    <br>
+                    <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
+                    <br>
+                    <input type="file" id="fileInput">
+                    
+                    <button onclick="addNote()" id="button">Save</button>
+
+                </form>     
 
                 <div>
                     <h3>My Notes</h3>

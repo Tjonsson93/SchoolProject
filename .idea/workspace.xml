@@ -51,7 +51,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Skrivbord/java-express-tutorial-file-upload" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -138,29 +138,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1120" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607551193702" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1607595532929">
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1608139047205">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608139047205" />
     <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607595532929" />
-    <state width="1877" height="163" key="GridCell.Tab.0.bottom" timestamp="1607978194703">
+    <state width="1877" height="163" key="GridCell.Tab.0.bottom" timestamp="1608131616006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
+    <state width="1877" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608131616006" />
     <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
-    <state width="1877" height="163" key="GridCell.Tab.0.center" timestamp="1607978194703">
+    <state width="1877" height="163" key="GridCell.Tab.0.center" timestamp="1608131616006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
+    <state width="1877" height="163" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608131616006" />
     <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
-    <state width="1877" height="163" key="GridCell.Tab.0.left" timestamp="1607978194703">
+    <state width="1877" height="163" key="GridCell.Tab.0.left" timestamp="1608131616006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
+    <state width="1877" height="163" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608131616006" />
     <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917604" />
-    <state width="1877" height="163" key="GridCell.Tab.0.right" timestamp="1607978194703">
+    <state width="1877" height="163" key="GridCell.Tab.0.right" timestamp="1608131616006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="163" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
+    <state width="1877" height="163" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1608131616006" />
     <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
     <state x="830" y="94" key="SettingsEditor" timestamp="1607636602287">
       <screen x="0" y="0" width="1920" height="1040" />

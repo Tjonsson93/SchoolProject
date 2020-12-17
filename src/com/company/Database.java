@@ -24,12 +24,16 @@ public class Database {
     }
 
     public String uploadImage(FileItem image) {
-        String imageUrl = "/images/" + image.getName();
+        String imageUrl = "/uploads/" + image.getName();
+
 
         try (var os = new FileOutputStream(Paths.get("src/Frontend" + imageUrl).toString())) {
+
+
             os.write(image.get());
         } catch (Exception e) {
             e.printStackTrace();
+
             return null;
         }
 
