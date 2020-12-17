@@ -6,8 +6,7 @@ public class Notes {
     private String title;
     private String text;
     private long timestamp;
-    private String imageUrl;
-
+    private String myFile;
 
     public Notes() { }
 
@@ -17,20 +16,19 @@ public class Notes {
         this.timestamp = timestamp;
     }
 
-    public Notes(String title, String text, long timestamp, String imageUrl) {
+    public Notes(String title, String text, long timestamp, String myFile) {
         this.title = title;
         this.text = text;
         this.timestamp = timestamp;
-        this.imageUrl = imageUrl;
-
+        this.myFile = myFile;
     }
 
-    public Notes(int id, String title, String text, long timestamp, String imageUrl) {
+    public Notes(int id, String title, String text, long timestamp, String myFile) {
         this.id = id;
         this.title = title;
         this.text = text;
         this.timestamp = timestamp;
-        this.imageUrl = imageUrl;
+        this.myFile = myFile;
     }
 
 
@@ -66,12 +64,12 @@ public class Notes {
         this.timestamp = timestamp;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public String getMyFile() {
+        return myFile;
     }
 
-    public void setImageUrl(String imageUrl) {
-        this.imageUrl = imageUrl;
+    public void setMyFile(String myFile) {
+        this.myFile = myFile;
     }
 
 
@@ -82,7 +80,7 @@ public class Notes {
                 ", title='" + title + '\'' +
                 ", text='" + text + '\'' +
                 ", timestamp=" + timestamp +
-                ", imageUrl='" + imageUrl + '\'' +
+                ", myFile='" + myFile + '\'' +
                 '}';
     }
 

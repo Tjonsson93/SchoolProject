@@ -1,4 +1,5 @@
 let notes = [];
+getNotes();
 
 
 //adding a new note to the list.
@@ -113,6 +114,44 @@ function hideShowTitle() {
 
 
 
+
+async function addNote(e) {
+    e.preventDefault();
+
+    let files = document.querySelector('input[type=file]').files;
+    let formData = new FormData();
+
+    for(let file of files) {
+        formData.append('files', file, file.name);
+    }
+
+    let uploadResult = await fetch('/api/file-upload',{
+        method: 'POST',
+        body: formData
+    });
+
+    let myFile = await uploadResult.text();
+
+    let titleInput = $("#titleInput").val();
+    let textInput = $("#noteField").val();
+    
+    if (titleInput.length > 0 && textInput.length > 0) {
+        
+        let note = {
+            title: titleInput,
+            text: textInput,
+            myFile: myFile
+        }
+
+        notes.push(note);
+        addItemToDB(note);
+    } else {
+        alert("Please enter title and text.");
+    }
+
+    renderList();
+    renderTitles();
+}
 
 // searchbar function
 $(function(){

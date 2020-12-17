@@ -1,4 +1,5 @@
 let notes = [];
+getNotes();
 
 
 
@@ -74,6 +75,7 @@ function renderList() {
     addIdToLiElement();
 }
 
+//renders titles in different list
 
 
 
@@ -98,9 +100,47 @@ function renderTitles() {
 
 }
 
+async function addNote(e) {
+    e.preventDefault();
 function hideShowTitle() {
     var el = $( '#titleList' );
 
+    let files = document.querySelector('input[type=file]').files;
+    let formData = new FormData();
+
+    for(let file of files) {
+        formData.append('files', file, file.name);
+    }
+
+    let uploadResult = await fetch('/api/file-upload',{
+        method: 'POST',
+        body: formData
+    });
+
+    let myFile = await uploadResult.text();
+
+    let titleInput = $("#titleInput").val();
+    let textInput = $("#noteField").val();
+    
+    if (titleInput.length > 0 && textInput.length > 0) {
+        
+        let note = {
+            title: titleInput,
+            text: textInput,
+            myFile: myFile
+        }
+
+        notes.push(note);
+        addItemToDB(note);
+    } else {
+        alert("Please enter title and text.");
+    }
+
+    renderList();
+    renderTitles();
+}
+
+// searchbar function
         $( el )
             .find( 'li:gt(9)' )
 			.hide()
@@ -142,6 +182,14 @@ $(function(){
 
 
 
+//drop down menu
+$(function() {
+    $("#filterText").change(function() {
+      var choice = $('#filterText').val();
+      if (choice != "all") $("ul").show().not('#' + choice).hide();
+      else $("ul").show();
+    });
+});
 
 
 //drop down menu
@@ -174,6 +222,8 @@ function sort(selector) {
                 return (A < B) ? -1 : (A > B) ? 1 : 0; 
             }).appendTo(selector);
 
+
+//deletes from notes
                 
         }
         //order list oldest
