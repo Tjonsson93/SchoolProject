@@ -1,4 +1,5 @@
 let notes = [];
+getNotes();
 
 //adding a new note to the list.
 function addNote() {
@@ -103,6 +104,17 @@ function updateNote(){
     renderList();
     renderTitles();
 }
+//drop down menu
+$(function() {
+    $("#filterText").change(function() {
+      var choice = $('#filterText').val();
+      if (choice != "all") $("ul").show().not('#' + choice).hide();
+      else $("ul").show();
+    });
+});
+
+
+
 
 //deletes from notes
 function deleteFunction() {
