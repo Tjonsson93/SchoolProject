@@ -26,27 +26,24 @@
     <section>
         <h2>My Notes</h2>
         <select id='filterText'>
-            <option value="all"> All </option>
-            <option value="1">Value 1</option>
-            <option value="2">Value 2</option>
-            <option value="3">Value 3</option>
+            <option value="all" disabled selected> Sort by </option>
+            <option value="1">A-Ö</option>
+            <option value="2">Ö-A</option>
+            <option value="3">Newest</option>
+            <option value="4">Oldest</option>
          </select>
         
         
-        <input id="searchbar" type="text" />
-        
+        <input id="searchbar" type="text" placeholder="Search for..">
+        <form onsubmit="addNote(event)"></form>
         
         <div class="addNotes">
                 <input id="titleInput" name="title" type="text" placeholder="title">
                 <br>
                 <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
                 <br>
-                <button id="addFile">Add file</button><br>
+                <button id="addFile">Add file</button></br>
                 <button onclick="addNote()" id="button">Save</button>
-                
-                <div class="search-bar">
-                    <input id="search" type ="text" placeholder="Search for..">
-                </div>
 
                 <div>
                     <h3>My Notes</h3>

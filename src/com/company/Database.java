@@ -1,13 +1,13 @@
 package com.company;
 
-
+import com.fasterxml.jackson.core.JsonProcessingException;
 import express.utils.Utils;
 import org.apache.commons.fileupload.FileItem;
 
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.file.Paths;
 import java.sql.*;
-import java.time.Instant;
 import java.util.List;
 
 public class Database {
@@ -28,13 +28,13 @@ public class Database {
             PreparedStatement stmt = conn.prepareStatement("INSERT INTO notes (title, text, timestamp, fileUrl) VALUES (?, ?, ?, ?)");
             stmt.setString(1, note.getTitle());
             stmt.setString(2, note.getText());
-            stmt.setInt(3, note.getTimestamp());
+            stmt.setLong(3, note.getTimestamp());
             stmt.setString(4, note.getFileUrl());
 
 
             stmt.executeUpdate();
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
     }
 
@@ -43,8 +43,8 @@ public class Database {
 
         try (var os = new FileOutputStream(Paths.get("src/Frontend" + fileUrl).toString())) {
             os.write(file.get());
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException throwables) {
+            throwables.printStackTrace();
             return null;
         }
 
@@ -60,9 +60,8 @@ public class Database {
 
             Notes[] notesFromRs = (Notes[]) Utils.readResultSetToObject(rs, Notes[].class);
             notes = List.of(notesFromRs);
-
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (SQLException | JsonProcessingException throwables) {
+            throwables.printStackTrace();
         }
 
         return notes;
@@ -81,8 +80,8 @@ public class Database {
 
             note = notesFromRs[0];
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (SQLException | JsonProcessingException throwables) {
+            throwables.printStackTrace();
         }
 
         return note;
@@ -94,14 +93,14 @@ public class Database {
             PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET title = ?, text = ?, timestamp = ?, fileUrl = ? WHERE id = ?");
             stmt.setString(1, note.getTitle());
             stmt.setString(2, note.getText());
-            stmt.setInt(3, note.getTimestamp());
+            stmt.setLong(3, note.getTimestamp());
             stmt.setString(4, note.getFileUrl());
 
 
             stmt.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        } catch (SQLException throwables) {
+        throwables.printStackTrace();
+    }
 
     }
 

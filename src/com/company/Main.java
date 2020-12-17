@@ -55,7 +55,7 @@ public class Main {
 
         app.delete("/rest/notes/:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
-            System.out.println("notes"  + notes.toString());
+            System.out.println("Notes: "  + notes.toString());
             db.deleteNotes(notes);
         });
 
@@ -66,6 +66,6 @@ public class Main {
         }
 
         app.listen(5500);
-        System.out.println("server started at port 5000");
+        System.out.println("server started at port 5500");
     }
 }

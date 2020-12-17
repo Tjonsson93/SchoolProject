@@ -1,6 +1,4 @@
 let notes = [];
-let titlelist = [];
-
 
 //adding a new note to the list.
 function addNote() {
@@ -12,19 +10,19 @@ function addNote() {
         let note = {
             title: titleInput,
             text: textInput
-            
-            
         }
 
         notes.push(note);
         addItemToDB(note);
+
     } else {
-        alert("Please enter title and text.");
+
     }
 
     renderList();
     renderTitles();
 }
+
 // function to display the list of notes on the page.
 function renderList() {
     let list = $("#notesList");
@@ -35,50 +33,78 @@ function renderList() {
         list.append(`<li id="noteId"> <h3>${everyNote.title}</h3> <br>
         published: ${date} <br> 
         <p>${everyNote.text}</p>
-        <button class="deleteButton" onClick="window.location.reload()">Delete</button></li>`);
+        <button class="deleteButton" onClick="window.location.reload()">Delete</button> <button class="updateButton" onClick="">Edit</button></li>`
+        );  
 
     }
     deleteFunction();
 }
 
+//renders titles in different list
 function renderTitles() {
     let list = $("#titleList");
     list.empty();
     for (everyNote of notes) {
         
         
-        list.append(`<li id="titleLink"><a href="">${everyNote.title}</a></li>`);
-        
-        
-        
+        list.append(`<li id="titleLink">${everyNote.title}</li>`);
     }
-    
 }
 
-
+// searchbar function
 $(function(){
 
-    $('input[type="text"]').keyup(function(){
+    $('#searchbar').keyup(function(){
         
         var searchText = $(this).val();
         
-        $('ul > li').each(function(){
+        $('#notesList > li').each(function(){
             
             var currentLiText = $(this).text(),
                 showCurrentLi = currentLiText.indexOf(searchText) !== -1;
             
-            $(this).toggle(showCurrentLi);
-            
+            $(this).toggle(showCurrentLi);            
         });     
     });
-
 });
 
+//drop down menu
+$(function() {
+    $("#filterText").change(function() {
+      var choice = $('#filterText').val();
+      if (choice != "all") $("ul").show().not('#' + choice).hide();
+      else $("ul").show();
+    });
+});
 
+function updateNote(){
+    let updateButtons = $(".updateButton");
+    let titleInput = $("#titleInput").val();
+    let textInput = $("#noteField").val();
+    
+    for (let i = 0; i < deleteButtons.length; i++) {
+        $(deleteButtons[i]).click(function () {
+            let parentElement = this.parentElement;
+            parentElement.style.display = "none";
+            console.log(notes[i]);
+            deleteNote(notes[i]);
+            notes.splice(i,1); 
+        });
+        
+        let note = {
+            title: titleInput,
+            text: textInput
+        }
 
+        notes.push(note);
+        addItemToDB(note);
+    }
 
+    renderList();
+    renderTitles();
+}
 
-
+//deletes from notes
 function deleteFunction() {
     let deleteButtons = $(".deleteButton");
     
@@ -91,7 +117,6 @@ function deleteFunction() {
             notes.splice(i,1); 
         });
     }
-
 }
 
 async function addItemToDB(note) {
@@ -109,12 +134,18 @@ async function getNotes() {
     renderTitles();
 }
 
+async function updateNoteInDb(note) {
+    let result = await fetch("/rest/notes/id", {
+        method: "put",
+        body: JSON.stringify(note)
+    });
+}
+
 async function deleteNote(note) {
     let result = await fetch("/rest/notes/id", {
         method: "DELETE",
         body: JSON.stringify(note)
     });
 }
-
 
 getNotes();

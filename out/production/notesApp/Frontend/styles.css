@@ -1,6 +1,6 @@
-nav{
+nav {
     text-align: center;
-    background-color: #9fc5c5;
+    background-color: #9fc5c5a2;
 }
 
 body {
@@ -9,14 +9,14 @@ body {
     background-size: cover;
 }
 
-header{ 
+header { 
     font-family: Noto Sans JP, sans-serif;
     text-align: center;
     width: 100%;
-    background-color: #025c5c48;
+    background-color: #9fc5c550;
 }
 
-a{ 
+a { 
     font-family: Noto Sans JP, sans-serif;
     color: #025c5c;
     text-decoration: none;
@@ -24,30 +24,29 @@ a{
 }
 
 
-h1, h2, h3, button{
+h1, h2, h3, button {
     color: #025c5c;
     text-align: center;
     padding: 1rem;
 }
+
 h1 {
     padding: 20px;
 }
-
 
 h3 {
     font-size: 25px;
     margin: 20px;
     padding: 1px 10px;
-    background-color: #295e5e5b;
+    background-color: #9fc5c550;
     border-radius: 4px;
 }
 
-
-body{
+body {
     background-color:#9fc5c5;
 }
 
-#titleInput{
+#titleInput {
     border-radius: 5px;
     border: 1px solid #025c5c;
     width: 14rem;
@@ -55,32 +54,22 @@ body{
     font-size: 16px;
 }
 
-#save{
-    background-color: #025c5c;
-    padding: 6px 12px;
-    font-family: Noto Sans JP, sans-serif;
-    border: 1px solid #499191;
-    color:#9fc5c5;
-    border-radius: 2px;
-}
-
-button{
+button {
     padding: 6px 12px;
     border-radius: 5px;
     border: 1px solid #025c5c;
     color: #025c5c;
-    background: #b8d8d8e0;
-    
+    background: #9fc5c5a2;
 }
 
-#addPicture{
+#addPicture {
     padding: 6px 12px;
     border-radius: 5px;
     border: 1px solid #025c5c;
     color: #025c5c;
 }
 
-#notefield{
+#notefield {
     font-family: Noto Sans JP, sans-serif;
     width: 400px;
     height: 300px;
@@ -92,7 +81,6 @@ button{
   flex-direction: column;
   align-items: center;
 }
-
 
 li {
     background: white;
@@ -111,5 +99,3 @@ li {
     border-radius: 5px;
     border: 1px solid #025c5c;
 }
-
-
