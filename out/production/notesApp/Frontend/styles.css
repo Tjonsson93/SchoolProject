@@ -1,101 +1,63 @@
-nav {
+nav{
     text-align: center;
-    background-color: #9fc5c5a2;
-}
+    background-color: #9fc5c5;
 
-body {
-    background-image: url("https://images.unsplash.com/photo-1516728043722-b394cb2f689e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-header { 
-    font-family: Noto Sans JP, sans-serif;
-    text-align: center;
-    width: 100%;
-    background-color: #9fc5c550;
-}
-
-a { 
-    font-family: Noto Sans JP, sans-serif;
-    color: #025c5c;
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-
-h1, h2, h3, button {
-    color: #025c5c;
-    text-align: center;
-    padding: 1rem;
-}
-
-h1 {
-    padding: 20px;
-}
-
-h3 {
-    font-size: 25px;
-    margin: 20px;
-    padding: 1px 10px;
-    background-color: #9fc5c550;
-    border-radius: 4px;
 }
 
 body {
     background-color:#9fc5c5;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    margin: 5px 0;
+}
+
+textarea {
+    width: 100%;
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    margin-left: 40%;
+}
+
+ul li {
+    background: white;
+    width: 25%;
+    margin: 5px 0;
+    padding-bottom: 15px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 gray;
+}
+
+ul li > img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+#searchBar {
+    padding: 0.2rem;
+    max-width: 150px;
+
+}
+
+#filterText {
+    padding: 0.2rem;
 }
 
 #titleInput {
-    border-radius: 5px;
-    border: 1px solid #025c5c;
-    width: 14rem;
-    padding: 0.3rem;
-    font-size: 16px;
-}
-
-button {
-    padding: 6px 12px;
-    border-radius: 5px;
-    border: 1px solid #025c5c;
-    color: #025c5c;
-    background: #9fc5c5a2;
-}
-
-#addPicture {
-    padding: 6px 12px;
-    border-radius: 5px;
-    border: 1px solid #025c5c;
-    color: #025c5c;
-}
-
-#notefield {
-    font-family: Noto Sans JP, sans-serif;
-    width: 400px;
-    height: 300px;
-}
-
-
-.addNotes{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-li {
-    background: white;
-    padding: 1rem;
-    border-radius: 5px;
-    border: 1px solid #025c5c;
-
-}
-
-.search-bar {
-    padding: 1rem;
-}
-
-#searchInput {
-    outline: none; 
-    border-radius: 5px;
-    border: 1px solid #025c5c;
+    padding: 0.2rem;
 }

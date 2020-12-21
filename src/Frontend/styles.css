@@ -1,293 +1,63 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
 nav{
-    margin-top: 30px;
     text-align: center;
-    background-color: #5757574f;
-    padding: 16px 20px;    
+    background-color: #9fc5c5;
+
 }
 
-body.newNote {
-    background-image: url(images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-body.home{
-    background-color: #3db3b3;
-}
-
-header h1 { 
-    font-family: Noto Sans JP, sans-serif;
+body {
+    background-color:#9fc5c5;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
     width: 100%;
-    background-color: #33a7a773;
-    color: #025c5c;
-    padding: 17px 0px 17px;
-    margin-top: 50px;
-    
 }
 
-a { 
-    font-size: 20px;
-    font-family: Noto Sans JP, sans-serif;
-    color: #025c5c;
-    text-decoration: none;
-}
-
-h2, h3, h4 {
-    font-family: Noto Sans JP, sans-serif;
-    color: #024242;
-    text-align: center;
-    background-color:#52b1b1a8;
-    border-radius: 4px;
-}
-
-h2 {
-    position: relative;
-    width: 100%;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 150px 10px 150px;
-}
-
-h3 {
-    margin: 0;
-    width: 100%;
-    background-color:#52b1b1;
-}
-
-h4 {
-    font-size: 20px;
-    margin: 0 ;
-    padding: 0.5rem;    
-    margin-top: 10px;
-    background-color: #5757574f;
-    color:black;
-}
-
-button {
-    padding: 10px 20px;
-    border-radius: 3px;
-    border: 1px solid #025c5c;
-    color: #025c5c;
-}
-
-
-select {
-    display: inline;
-    margin: 60px 2px;
-    width: 20%;
-    font-size: 20px;
-    
+form {
+    max-width: 400px;
+    margin: auto;
 }
 
 input {
-    width: 75%;
-    font-size: 18px;
+    width: 100%;
+    margin: 5px 0;
 }
 
-section {
-    margin: 0;
+textarea {
+    width: 100%;
+    margin: 5px 0;
 }
 
-.addNotes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+ul {
+    list-style: none;
+    margin-left: 40%;
 }
 
-.search {
-    padding: 2px 5px;
+ul li {
+    background: white;
+    width: 25%;
+    margin: 5px 0;
+    padding-bottom: 15px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 gray;
 }
 
-.buttons {
-    display:inline-block;
+ul li > img {
+    border-radius: 20px 20px 0px 0px;
 }
 
-.deleteButton {
-    background-color:  #3fa3a3;
-    color: rgb(231, 231, 231); 
-    margin-left: 85%;
-    margin-top: 10%;
-}
+#searchBar {
+    padding: 0.2rem;
+    max-width: 150px;
 
-.homeBtn {
-    padding: 2px 5px 2px 5px;
-    border-radius: 5px;
-    border: 1px solid #025c5c;
-
-}
-
-.fa-home:before{
-    font-size: 30px;
-    color: black;
-    
 }
 
 #filterText {
-    margin: 10px 5px 10px;
+    padding: 0.2rem;
 }
 
 #titleInput {
-    font-family: 'Reenie Beanie', cursive;
-    border-radius: 5px;
-    border: 1px solid  #025c5c;
-    width: 20%;
-    padding: 0.4rem;
-    font-size: 16px;
-}
-
-
-/* #save {
-    background-color: #025c5c;
-    padding: 6px 12px;
-    font-family: Noto Sans JP, sans-serif;
-    border: 1px solid #499191;
-    color:#9fc5c5;
-    border-radius: 2px;
-} */
-
-#titleList {
-    font-family: 'Reenie Beanie', cursive;
-    font: bold;
-    font-size: 15px;
-    padding: 5px 20px 10px 25px;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: #025c5c;
-    background: #9fc5c5a2;
-}
-
-#addFile, #button {
-    margin: 10px 0px;
-    margin-top: 40px;
-}
-
-#addPicture{
-    padding: 6px 12px;
-    border-radius: 3px;
-    border: 1px solid #025c5c;
-    color: #025c5c;
-}
-
-div.addNotes {
-    margin-top: 4%
-}
-
-
-/*LINES TEXTAREA*/
-textarea {
-    color: #000000;
-    border: 1px solid #EEEEEE;
-    box-shadow: 1px 1px 0 #DDDDDD;
-    display: inline-block;
-    vertical-align: top;
-    
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 16px;
-    color: #025c5c;
-    
-    line-height: 20px;
-    margin: 0;
-    padding: 20px 20px 5px;
-    resize: none;
-    min-height: 400px;
-    width: 30%;
-    
-    background-color: #eaf2fa;
-    background-image: -moz-linear-gradient(top, transparent, transparent 19px,#b8c5d3 0px), -moz-radial-gradient(4% 50%, circle closest-corner, #f5f5f5, #f5f5f5 29%, transparent 0%);
-    background-image: -webkit-linear-gradient(top, transparent, transparent 19px, #b8c5d3 0), -webkit-radial-gradient(4% 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent 0%);
-    -webkit-background-size: 100% 20px;
-    background-size: 100% 20px;
-    
-    border-radius: 5px;
-    border: 1px solid #025c5c;
-}
-#noteId {
-    list-style-type: none;
-    font-size: 14px;
-    font-family: 'Reenie Beanie', cursive;
-    padding: 0.3rem;
-    border-radius: 5px;
-    border: 1px solid #025c5c;
-
-    background-color: #eaf2fa;
-    background-image: -moz-linear-gradient(top, transparent, transparent 19px,#b8c5d3 0px), -moz-radial-gradient(4% 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent 0%);
-    background-image: -webkit-linear-gradient(top, transparent, transparent 19px, #b8c5d3 0), -webkit-radial-gradient(3% 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent 0%);
-    -webkit-background-size: 100% 20px;
-    background-size: 100% 20px;
-
-    line-height: 20px;
-
-
-}
-
-
-/*HOME PAGE EFFEKT NOTEPAD*/
-
-a.new {
-    font-family: 'Reenie Beanie', cursive;
-    display: block;
-    transform: rotate(90deg); 
-    font-size: 18px;
-    margin-top: 120px;
-    margin-left: 80px;
-    color: white;
-}
-
-.notebook {
-    position: relative;
-    display: block; 
-    margin-top: 10rem;
-    margin-left: 35%;
-    margin-right: auto;
-    width: 30%;
-}
-.overlay {
-    position: absolute;
-    margin-left: 52%;
-    margin-top: 250px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 61%;
-    width: 19.7%;
-    opacity: 0; 
-    transition: .5s ease;
-}
-  
-.container:hover .overlay {
-    opacity: 1;
-}
-  
-.text {
-    font-family: 'Reenie Beanie', cursive;
-    color: rgb(9, 10, 78);
-    font-size: 22px;
-    position: absolute;
-    top: 20%;
-    left: 0;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-/*SIDEBAR*/
-.sidebar {
-    height: 100%;
-    width: 300px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(240, 240, 240, 0.836);
-    overflow-x: hidden;
-    padding-top: 20px;
+    padding: 0.2rem;
 }

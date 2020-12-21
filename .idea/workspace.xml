@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="7af6c837-916d-4bf4-8fa6-0102695dd778" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/images/notebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Files.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Files.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NoteApp.db" beforeDir="false" afterPath="$PROJECT_DIR$/NoteApp.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/newNote.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/newNote.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/notesApp/com/company/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Database.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/notesApp/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/notesApp/com/company/Notes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Notes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/newNote.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/newNote.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/styles.css" afterDir="false" />
@@ -44,38 +42,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1lKKOsvornhI1N2TQTnPUpWjUS3" />
+  <component name="ProjectId" id="1lsMRz3JP1WIY64pmLakRSWgUzx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Sarah\Documents\OPA20\notesApp\src" />
-    </key>
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../todoey" />
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="notesApp" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,27 +80,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aa8674ce-5700-44c6-9ee7-0ea87ed5f90c" name="Default Changelist" comment="" />
-      <created>1607340315789</created>
+      <changelist id="7af6c837-916d-4bf4-8fa6-0102695dd778" name="Default Changelist" comment="" />
+      <created>1608381346033</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1607340315789</updated>
+      <updated>1608381346033</updated>
     </task>
-    <task id="LOCAL-00001" summary="Added values to notes, created sqlite queries">
-      <created>1607422069169</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1607422069169</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added values to notes, created sqlite queries">
-      <created>1607422083130</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1607422083130</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,76 +99,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$USER_HOME$" />
-    </ignored-roots>
-    <MESSAGE value="Added values to notes, created sqlite queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added values to notes, created sqlite queries" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1607696783048">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607696783048" />
-    <state x="1245" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607437088830" />
-    <state x="1259" y="214" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1607419086136">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1259" y="214" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607419086136" />
-    <state x="1120" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607551193702">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1120" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607551193702" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1607595532929">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607595532929" />
-    <state width="1237" height="280" key="GridCell.Tab.0.bottom" timestamp="1608132519761">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="280" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1608132519761" />
-    <state width="1877" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
-    <state width="1877" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
-    <state width="1237" height="280" key="GridCell.Tab.0.center" timestamp="1608132519761">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="280" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1608132519761" />
-    <state width="1877" height="163" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
-    <state width="1877" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
-    <state width="1237" height="280" key="GridCell.Tab.0.left" timestamp="1608132519761">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="280" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1608132519761" />
-    <state width="1877" height="163" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
-    <state width="1877" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917604" />
-    <state width="1237" height="280" key="GridCell.Tab.0.right" timestamp="1608132519761">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="280" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1608132519761" />
-    <state width="1877" height="163" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607978194703" />
-    <state width="1877" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607677917605" />
-    <state x="830" y="94" key="SettingsEditor" timestamp="1607636602287">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="830" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607636602287" />
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2" timestamp="1607422107672">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1032" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607422107672" />
-    <state x="1257" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607422088024">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1257" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607422088024" />
-    <state x="1031" y="143" key="new project wizard" timestamp="1607595566753">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1031" y="143" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1607595566753" />
-    <state x="1102" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1607438308279">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1102" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607438308279" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SchoolProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1607697018901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

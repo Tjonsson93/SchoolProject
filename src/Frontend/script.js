@@ -1,54 +1,43 @@
 let notes = [];
-getNotes();
 
-//adding a new note to the list.
 function addNote() {
     let titleInput = $("#titleInput").val();
     let textInput = $("#noteField").val();
     
     if (titleInput.length > 0 && textInput.length > 0) {
-        
         let note = {
             title: titleInput,
             text: textInput
         }
-
         notes.push(note);
         addItemToDB(note);
+        $("#titleInput").val("");
+        $("#noteField").val("");
 
     } else {
-        alert("Please enter title and text")
-
+        alert("Please enter title and text.");
     }
-
     renderList();
-    renderTitles();
+    renderTitles();    
 }
 
-function addIdToLiElement(){
-    $("#notesList li").attr("data-value", function(i) {
-        return (i);
-    });
-}
-
-// function to display the list of notes on the page.
 function renderList() {
     let list = $("#notesList");
     list.empty();
-    for (everyNote of notes) {
+    
+     for (everyNote of notes) {
         let date = new Date(everyNote.timestamp).toLocaleString();
-        
-        list.append(`<li id="noteId"> <h3>${everyNote.title}</h3> <br>
-        published: ${date} <br> 
-        <p>${everyNote.text}</p>
-        <button class="deleteButton">Delete</button> <button class="updateButton">Edit</button></li>`);  
+        list.append(`<li><h3>${everyNote.title}</h3> <br> 
+        <p id="myNote" contentEditable="true">${date}</p>
+        <input id="editText" name="edit" type="text" placeholder="${everyNote.text}"></input>
+        <button class="deleteButton">Delete</button> <button class="updateButton" onClick="updateNote(${everyNote.id})">Update</button></li>`);
     }
+
     deleteFunction();
     addIdToLiElement();
     updateNote();
-}
+}   console.log(Date);
 
-//renders titles in different list
 function renderTitles() {
     let list = $("#titleList");
     list.empty();
@@ -59,68 +48,22 @@ function renderTitles() {
     hideShowTitle();
 }
 
-function hideShowTitle() {
-    var el = $( 'ul' );
+function deleteFunction() {
+    let deleteButtons = $(".deleteButton");
 
-        $( el )
-            .find( 'li:gt(9)' )
-			.hide()
-			.parent()
-			.append( 
-				$( '<li>more</li>' ).on( 'click', function() {				
-					var items = $( this ).siblings( ':hidden' );
-					
-					if ( items.length ) items.slice( 0, 10 ).show();					
-					else $( el ).find( 'li:gt(9)' ).not( this ).hide();
-					
-					$( this ).text( $( this ).siblings( ':hidden' ).length ? 'more' : 'less' );					
-				})
-			 );
-
+    for (let i = 0; i < deleteButtons.length; i++) {
+        $(deleteButtons[i]).click(function () {
+            let parentElement = this.parentElement;
+            parentElement.style.display = "none";
+            deleteNote(notes[i]);
+            notes.splice(i,1); 
+        })
+    }
 }
 
-async function addNote(e) {
-    e.preventDefault();
-
-    let files = document.querySelector('input[type=file]').files;
-    let formData = new FormData();
-
-    for(let file of files) {
-        formData.append('files', file, file.name);
-    }
-
-    let uploadResult = await fetch('/api/file-upload',{
-        method: 'POST',
-        body: formData
-    });
-
-    let myFile = await uploadResult.text();
-
-    let titleInput = $("#titleInput").val();
-    let textInput = $("#noteField").val();
-    
-    if (titleInput.length > 0 && textInput.length > 0) {
-        
-        let note = {
-            title: titleInput,
-            text: textInput,
-            myFile: myFile
-        }
-
-        notes.push(note);
-        addItemToDB(note);
-    } else {
-        alert("Please enter title and text.");
-    }
-
-    renderList();
-    renderTitles();
-}
-
-// searchbar function
 $(function(){
 
-    $('#searchbar').keyup(function(){
+    $('#searchBar').keyup(function(){
         
         var searchText = $(this).val();
         
@@ -134,7 +77,6 @@ $(function(){
     });
 });
 
-//drop down menu
 function sort(selector) { 
     
     let choice = $('#filterText').val();
@@ -175,67 +117,78 @@ function sort(selector) {
         }
 }    
     $('#filterText').change(function() { 
-        sort("#notesList"); 
-            
+    sort("#notesList"); 
     });
 
-function updateNote() {
-    let allUpdateButtons = $(".updateButton");
-    allUpdateButtons.empty();
-    
-    for (let i = 0; i < allUpdateButtons.length; i++) {
-        $(allUpdateButtons[i]).click(function () {
-
-            updateNoteInDb(notes);
-        });
-    }
+function addIdToLiElement(){
+    $("#notesList li").attr("data-value", function(i) {
+        return (i);
+    });
 }
 
-//deletes from notes
-function deleteFunction() {
-    let deleteButtons = $(".deleteButton");
-    
-    for (let i = 0; i < deleteButtons.length; i++) {
-        $(deleteButtons[i]).click(function () {
-            let parentElement = this.parentElement;
-            parentElement.style.display = "none";
-            console.log(notes[i]);
-            deleteNote(notes[i]);
-            notes.splice(i,1); 
-        });
-    }
+function hideShowTitle() {
+    var el = $( 'ul' );
+
+        $( el )
+            .find( 'li:gt(9)' )
+            .hide()
+            .parent()
+            .append( 
+                $( '<li>more</li>' ).on( 'click', function() {              
+                    var items = $( this ).siblings( ':hidden' );
+                    
+                    if ( items.length ) items.slice( 0, 10 ).show();                    
+                    else $( el ).find( 'li:gt(9)' ).not( this ).hide();
+                    
+                    $( this ).text( $( this ).siblings( ':hidden' ).length ? 'more' : 'less' );                 
+                })
+             );
+
 }
 
-async function addItemToDB(note) {
+function updateNote(everyNote) {
+    let text = $("#editText").val();
+
+    let newNote = {
+        id: everyNote,
+        text: text
+    }
+
+    console.log(text);
+    console.log(everyNote);
+
+    updateNoteInDb(newNote);
+}
+
+async function addItemToDB(notes) {
     let result = await fetch('/rest/notes', {
         method: "POST",
-        body: JSON.stringify(note)
+        body: JSON.stringify(notes)
     });
-}
+}       
 
 async function getNotes() {
     let result = await fetch('/rest/notes');
     notes = await result.json();
-    
+
     renderList();
     renderTitles();
 }
 
-async function updateNoteInDb(notes) {
-    let noteToUpdate = {
-        id: note.id
-    }
+async function updateNoteInDb(note) {
     let result = await fetch("/rest/notes/id", {
-        method: "PUT",
-        body: JSON.stringify(note)
+    method: "PUT",
+    body: JSON.stringify(note)
     });
 }
 
-async function deleteNote(note) {
+async function deleteNote(notes) {
+    
     let result = await fetch("/rest/notes/id", {
         method: "DELETE",
-        body: JSON.stringify(note)
+        body: JSON.stringify(notes)
     });
+    location.reload();
 }
 
 getNotes();

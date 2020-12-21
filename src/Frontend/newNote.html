@@ -6,59 +6,65 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style type="text/css">* {cursor: url(https://ani.cursors-4u.net/others/oth-9/oth838.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2013/04/30/cute-black-pencil.html" target="_blank" title="Cute Black Pencil"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Cute Black Pencil" style="position:absolute; top: 0px; right: 0px;" /></a>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 
-<body class="newNote">
+<body>
+    
     <header>
         <h1>Awesome Notes</h1>
     </header>
-    
-    <div class="sidebar">
+    <aside>    
         <nav>
-            <button class="homeBtn"><a href="/home.html"><i class="fa fa-home"></i></a></button>
+            <a href="/home.html">Home</a>
+        
+            <a href="/newNote.html">Create new note</a>
         </nav>
     </aside>
+
     
     <section>
-        <h2>My Notes</h2>
+        <br>
+
         <select id='filterText'>
             <option value="all" disabled selected> Sort by </option>
             <option value="1">A-Ö</option>
             <option value="2">Ö-A</option>
-            <option value="3">Newest</option>
+            <option value="3">Latest</option>
             <option value="4">Oldest</option>
          </select>
+
         
         
-        <input id="searchbar" type="text" placeholder="Search for..">
-        <form onsubmit="addNote(event)"></form>
-        
-        <div class="addNotes">
+         <input id="searchBar" type="text" placeholder="Search for...">
+
+         <div class="addNotes">
+ 
+             <form> 
                 <input id="titleInput" name="title" type="text" placeholder="title">
                 <br>
-                <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
-                <br>
-                <button id="addFile">Add file</button></br>
+                <textarea name="note" id="noteField" cols="30" rows="10" placeholder="Type here..."></textarea>
+                <br>  
                 <button onclick="addNote()" id="button">Save</button>
+            </form>
 
-                <div>
-                    <h3>My Notes</h3>
-                    <ul id="notesList">
-                        
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3>My Titles</h3>
-                    <ul id="titleList">
-
-                    </ul>
-                </div>
-
+            <div class ="notes">
+                <h2>My Notes</h2>
+                <ul id="notesList">
+                    
+                </ul>
             </div>
-    
-    <script src="script.js" defer></script>
+         
+            <div>
+                <h2>My Titles</h2>
+                <ul id="titleList">
+
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 </html>

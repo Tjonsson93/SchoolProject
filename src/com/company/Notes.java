@@ -6,7 +6,6 @@ public class Notes {
     private String title;
     private String text;
     private long timestamp;
-    private String myFile;
 
     public Notes() { }
 
@@ -16,21 +15,12 @@ public class Notes {
         this.timestamp = timestamp;
     }
 
-    public Notes(String title, String text, long timestamp, String myFile) {
-        this.title = title;
-        this.text = text;
-        this.timestamp = timestamp;
-        this.myFile = myFile;
-    }
-
-    public Notes(int id, String title, String text, long timestamp, String myFile) {
+    public Notes(int id, String title, String text, long timestamp) {
         this.id = id;
         this.title = title;
         this.text = text;
         this.timestamp = timestamp;
-        this.myFile = myFile;
     }
-
 
     public int getId() {
         return id;
@@ -64,14 +54,6 @@ public class Notes {
         this.timestamp = timestamp;
     }
 
-    public String getMyFile() {
-        return myFile;
-    }
-
-    public void setMyFile(String myFile) {
-        this.myFile = myFile;
-    }
-
 
     @Override
     public String toString() {
@@ -80,7 +62,6 @@ public class Notes {
                 ", title='" + title + '\'' +
                 ", text='" + text + '\'' +
                 ", timestamp=" + timestamp +
-                ", myFile='" + myFile + '\'' +
                 '}';
     }
 }

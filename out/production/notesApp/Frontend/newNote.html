@@ -22,47 +22,49 @@
             <a href="/newNote.html">Create new</a>
         </nav>
     </aside>
+
     
     <section>
-        <h2>My Notes</h2>
+        <br>
+
         <select id='filterText'>
             <option value="all" disabled selected> Sort by </option>
             <option value="1">A-Ö</option>
             <option value="2">Ö-A</option>
-            <option value="3">Newest</option>
+            <option value="3">Latest</option>
             <option value="4">Oldest</option>
          </select>
+
         
         
-        <input id="searchbar" type="text" placeholder="Search for..">
-        <form onsubmit="addNote(event)"></form>
-        
-        <div class="addNotes">
+         <input id="searchBar" type="text" placeholder="Search for...">
+
+         <div class="addNotes">
+ 
+             <form> 
                 <input id="titleInput" name="title" type="text" placeholder="title">
                 <br>
-                <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
-                <br>
-                <input type="file" accept="image/*, .txt, .pdf, .doc, .docx" placeholder="Välj fil">
-                <button type="submit">Add note</button>
+                <textarea name="note" id="noteField" cols="30" rows="10" placeholder="Type here..."></textarea>
+                <br>  
+                <button onclick="addNote()" id="button">Save</button>
+            </form>
 
-                <div>
-        </form>
-                    <h3>My Notes</h3>
-                    <ul id="notesList">
-                        
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3>My Titles</h3>
-                    <ul id="titleList">
-
-                    </ul>
-                </div>
-
+            <div class ="notes">
+                <h2>My Notes</h2>
+                <ul id="notesList">
+                    
+                </ul>
             </div>
-    
-        </section>
-    
-    </body>
-    </html>
+         
+            <div>
+                <h2>My Titles</h2>
+                <ul id="titleList">
+
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

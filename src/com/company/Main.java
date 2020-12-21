@@ -22,6 +22,12 @@ public class Main {
             db.createNote(notes);
         });
 
+        app.post("/rest/files", (req, res) -> {
+            Files files = (Files) req.getBody(Files.class);
+            res.send("File uploaded");
+            db.createFile(files);
+        });
+
         app.post("/api/file-upload", (req, res) -> {
             String myFile = null;
 
@@ -32,12 +38,17 @@ public class Main {
                 e.printStackTrace();
             }
 
-            res.json(myFile);
+            res.send(myFile);
         });
 
         app.get("/rest/notes", (req, res) -> {
             List<Notes> notes = db.getNotes();
             res.json(notes);
+        });
+
+        app.get("/rest/files", (req, res) -> {
+            List<Files> files = db.getFiles();
+            res.json(files);
         });
 
         app.get("/rest/notes/:id", (req, res) -> {
@@ -51,18 +62,18 @@ public class Main {
             Notes notes = (Notes) req.getBody(Notes.class);
             db.updateNote(notes);
             res.send("Note updated");
-        app.post("/rest/notes", (req, res) -> {
-            Notes notes = (Notes) req.getBody(Notes.class);
-
-            System.out.println(notes.toString());
-
-            db.createNote(notes);
         });
 
         app.delete("/rest/notes/:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
-            System.out.println("Notes: "  + notes.toString());
+            System.out.println(notes);
             db.deleteNotes(notes);
+        });
+
+        app.delete("rest/files/:id", (req, res) -> {
+            Files files = (Files) req.getBody(Files.class);
+            System.out.println(files);
+            db.deleteFiles(files);
         });
 
         try {
@@ -71,7 +82,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        app.listen(5500);
-        System.out.println("server started at port 5500");
+        app.listen(5501);
+        System.out.println("server started at port 5501");
     }
 }
