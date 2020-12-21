@@ -14,6 +14,20 @@ public class Main {
         Express app = new Express();
         Database db = new Database();
 
+
+        app.get("/rest/files", (req, res) ->{
+            List<Files> files = db.getFileUrl();
+            System.out.println("work");
+            res.json(files);
+        });
+
+        app.get("/rest/notes", (req, res) -> {
+            List<Notes> notes = db.getNotes();
+            System.out.println("work1");
+            res.json(notes);
+        });
+
+
         app.post("/api/file-upload", (req, res) -> {
             String myFile = null;
 
@@ -23,21 +37,11 @@ public class Main {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
-            res.json(myFile);
+            System.out.println("file uploaded " + myFile);
+            res.send(myFile);
         });
 
-        app.get("/rest/notes", (req, res) -> {
-            List<Notes> notes = db.getNotes();
-            res.json(notes);
-        });
 
-        app.get("/rest/notes/:id", (req, res) -> {
-            int id = Integer.parseInt(req.getParam("id"));
-
-            Notes notes = db.getNoteById(id);
-            res.json(notes);
-        });
 
         app.post("/rest/notes", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
@@ -46,6 +50,22 @@ public class Main {
 
             db.createNote(notes);
         });
+
+        app.post("/rest/files", (req, res) -> {
+           Files files = (Files) req.getBody(Files.class);
+           db.createFile(files);
+
+           System.out.println(files.toString());
+        });
+
+
+
+        app.get("/rest/notes/:id", (req, res) -> {
+            int id = Integer.parseInt(req.getParam("id"));
+            Notes notes = db.getNoteById(id);
+            res.json(notes);
+        });
+
 
         app.delete("/rest/notes/:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
@@ -56,6 +76,7 @@ public class Main {
         app.put("/rest/notes/:id", (req, res) -> {
             Notes notes = (Notes) req.getBody(Notes.class);
             db.updateNote(notes);
+            System.out.println("work3");
             res.send("Note updated");
         });
 

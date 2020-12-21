@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <style type="text/css">* {cursor: url(https://ani.cursors-4u.net/others/oth-9/oth838.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2013/04/30/cute-black-pencil.html" target="_blank" title="Cute Black Pencil"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Cute Black Pencil" style="position:absolute; top: 0px; right: 0px;" /></a>
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    
 </head>
 
 <body class="newNote">
@@ -22,75 +22,65 @@
     </aside>
     
     <section>
-        <h2>My Notes</h2>
         
         
         
-        <select id='filterText'>
-            <option value="all">Sort By...</option>
-            <option value="1">Sort A-Ö</option>
-            <option value="2">Sort Ö-A</option>
-            <option value="3">Sort by latest</option>
-            <option value="4">Sort by oldest</option>
-        </select>
+        
+    
          
         <section>
             <select id='filterText'>
-                <option value="all"> All </option>
-                <option value="1">Value 1</option>
-                <option value="2">Value 2</option>
-                <option value="3">Value 3</option>
-                <input type="text" placeholder="Search for...">
+                <option value="all">Sort By... </option>
+                <option value="1">Sort A-Ö</option>
+                <option value="2">Sort Ö-A</option>
+                <option value="3">Sort by latest</option>
+                <option value="4">Sort by oldest</option>
+                <input id="searchbar" type="text" placeholder="Search for...">
                 
             </select>
         </section>
         
-        <input id="searchbar" type="text" />
+        
         
         <h4>My Titles</h4>
         <ul id="titleList"></ul> 
     </div>            
     
-    <div class="addNotes">
-        <input id="titleInput" name="title" type="text" placeholder="Title">
-        <br>
-        <textarea name="note" id="noteField" cols="30" rows="10" placeholder="Write here..."></textarea>
-        <br>
-        <div class ="buttons">
-            <button onclick="addNote()" id="button">Save</button>
-            <button id="addFile">Add file</button>
-        </div>
-        
-        
-        <div class="addNotes">
-                <form id="form"action="" method="post">
-                    <input id="titleInput" name="title" type="text" placeholder="title">
-                    <br>
-                    <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
-                    <br>
-                    <input type="file" id="fileInput">
-                    
-                    <button onclick="addNote()" id="button">Save</button>
-
-                </form>     
-
-                <div>
-                    <h3>My Notes</h3>
-                    <ul id="notesList">
-                        
-                    </ul>
-                </div>
                 
-                <div>
-                    <h2>My Titles</h2>
-                    <ul id="titleList">
-        <div>
-            <h2>My Notes</h2>
-            <ul id="notesList"></ul>
-        </div>
-    </div>>
+                    <div class="addNotes">
+
+                        <form onsubmit="addNote(event)">
+    
+                            <input id="titleInput" name="title" type="text" placeholder="Title" required>
+                            <br>
+                            <textarea name="note" id="noteField" cols="30" rows="10" placeholder="Write here..." required></textarea>
+                            <br>
+                            <input  id="fileInput" type="file" multiple  accept="image/*, .txt, .pdf, .doc, .docx" placeholder="Välj fil">
+                            <button type="submit">Add note</button>
+                            
+                        </form>
+                    </div>
+        
+
+               
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <h2>My Notes</h2>
+                <ul id="notesList"></ul>
+                
+            </div>
+   
     
     
-    <script src="script.js" defer></script>
 </body>
 </html>

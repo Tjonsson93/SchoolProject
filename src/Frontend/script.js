@@ -1,45 +1,109 @@
+
+
+// array for the notes
 let notes = [];
-getNotes();
+
+// array for file input
+let filesRender = [];
+
+//array for the files
+let filesToNote = [];
+
+getFiles();
+getNotes();    
 
 
-//adding a new note to the list.
-function addNote() {
+
+
+async function addNote() {
+    
+
+    let files = document.querySelector('input[type=file]').files;
+
+    let formData = new FormData();
+
+
+    for(let file of files) {
+        formData.append("files", file, file.name);
+    }
+
+    /*for(let p of formData){
+        console.log(p);
+    } */
+
+
+    let uploadResult = await fetch('/api/file-upload', {
+        method: 'POST',
+        body: formData 
+
+    });
+
+
+    let fileInput = await uploadResult.text(); 
+
     
     let titleInput = $("#titleInput").val();
     let textInput = $("#noteField").val();
-    
-    
-    
+
     if (titleInput.length > 0 && textInput.length > 0) {
-        
+
         let note = {
+            
             title: titleInput,
             text: textInput,
-            imageUrl: imageUrl
+        }
+
+        let file = {
+            myFile: fileInput
+            
             
         }
-               
 
+
+        filesRender.push(file);
+       
         notes.push(note);
         addItemToDB(note);
+        addFileToDB(file);
         
     } else {
-        alert("Please enter title and text.");
+        alert("Please enter title and text")
+
     }
+
     
+    console.log(filesRender);
     renderList();
     renderTitles();
+    
+
 }
 
 
 
 
 
-    
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+//adding a new note to the list.
+
+                
+            
+            
+            
 //adding a data-value to the li element when added to be able to sort
 //the list in frontend by latest added and oldest added
 function addIdToLiElement(){
@@ -48,6 +112,8 @@ function addIdToLiElement(){
      });
 
 }
+
+
 // function to display the list of notes on the page.
 function renderList() {
     let list = $("#notesList");
@@ -57,16 +123,16 @@ function renderList() {
         
         list.append(`<li id="noteId"> <h3>${everyNote.title}</h3> <br>
         published: ${date} <br> 
-        <img src="${everyNote.imageUrl}" alt="post-image"> <br>
         <p>${everyNote.text}</p>
+        <li><img src="${everyNote.myFile}" alt="post-image" width="200" height="150"></li>
         <button class="deleteButton">Delete</button></li>`);
-
         
     }
+    
+      
     deleteFunction();
     addIdToLiElement();
 }
-
 
 
 
@@ -114,44 +180,6 @@ function hideShowTitle() {
 
 
 
-
-async function addNote(e) {
-    e.preventDefault();
-
-    let files = document.querySelector('input[type=file]').files;
-    let formData = new FormData();
-
-    for(let file of files) {
-        formData.append('files', file, file.name);
-    }
-
-    let uploadResult = await fetch('/api/file-upload',{
-        method: 'POST',
-        body: formData
-    });
-
-    let myFile = await uploadResult.text();
-
-    let titleInput = $("#titleInput").val();
-    let textInput = $("#noteField").val();
-    
-    if (titleInput.length > 0 && textInput.length > 0) {
-        
-        let note = {
-            title: titleInput,
-            text: textInput,
-            myFile: myFile
-        }
-
-        notes.push(note);
-        addItemToDB(note);
-    } else {
-        alert("Please enter title and text.");
-    }
-
-    renderList();
-    renderTitles();
-}
 
 // searchbar function
 $(function(){
@@ -229,10 +257,6 @@ function sort(selector) {
             
     
     
-
-
-
-
 //deletes from notes
 function deleteFunction() {
     let deleteButtons = $(".deleteButton");
@@ -246,16 +270,48 @@ function deleteFunction() {
             notes.splice(i,1); 
         });
     }
+    
 }
 
 
+
+
+async function addFileToDB(myFile) {
+
+    let result = await fetch('/rest/files', {
+        method: 'POST',
+        body: JSON.stringify(myFile)
+    });
+}
+
+
+
 async function addItemToDB(note) {
+    
     let result = await fetch('/rest/notes', {
         method: "POST",
         body: JSON.stringify(note)
     });
+
+    
+
 }
 
+async function getFiles() {
+    let result = await fetch("/rest/notes");
+    filesList = await result.json();
+    renderList();
+    
+}
+
+
+async function deleteNote(note) {
+    let result = await fetch("/rest/notes/id", {
+        method: "DELETE",
+        body: JSON.stringify(note)
+    });
+    location.reload();
+}
 
 async function getNotes() {
     let result = await fetch('/rest/notes');
@@ -265,13 +321,5 @@ async function getNotes() {
     renderTitles();
 }
 
-async function deleteNote(note) {
-    let result = await fetch("/rest/notes/id", {
-        method: "DELETE",
-        body: JSON.stringify(note)
-    });
-}
 
 
-
-getNotes();

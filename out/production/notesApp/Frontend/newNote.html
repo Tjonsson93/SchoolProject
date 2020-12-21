@@ -7,84 +7,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js" defer></script>
-    <title>Document</title>
+    
 </head>
 
-<body>
-    
+<body class="newNote">
     <header>
         <h1>Awesome Notes</h1>
     </header>
-    <aside>    
+    
+    <div class="sidebar">
         <nav>
-            <a href="/home.html">Home</a>
-        
-            <a href="/newNote.html">Create new</a>
+            <button class="homeBtn"><a href="/home.html"><i class="fa fa-home"></i></a></button>
         </nav>
     </aside>
     
     <section>
-        <h2>My Notes</h2>
-        <select id='filterText'>
-            <option value="all"> All </option>
-            <option value="1">Value 1</option>
-            <option value="2">Value 2</option>
-            <option value="3">Value 3</option>
-         </select>
         
         
         
-        <select id='filterText'>
-            <option value="all">Sort By...</option>
-            <option value="1">Sort A-Ö</option>
-            <option value="2">Sort Ö-A</option>
-            <option value="3">Sort by latest</option>
-            <option value="4">Sort by oldest</option>
-        </select>
+        
+    
          
-        
-        <input id="searchbar" type="text" />
-        
-        
-        <input id="searchbar" type="text" />
-        
-        <form onsubmit="addNote(event)">
-        <div class="addNotes">
-                <form id="form"action="" method="post">
-                    <input id="titleInput" name="title" type="text" placeholder="title">
-                    <br>
-                    <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
-                    <br>
-                    <input type="file" id="fileInput">
-                    
-                    <button onclick="addNote()" id="button">Save</button>
-            
-                <input id="titleInput" name="title" type="text" placeholder="title">
-                <br>
-                <textarea name="note" id="noteField" cols="30" rows="10"></textarea>
-                <br>
-                <input type="file" accept="image/*, .txt, .pdf, .doc, .docx" placeholder="Välj fil">
-                <button type="submit">Add note</button>
-
-                </form>     
-
-                <div>
-        </form>
-                    <h3>My Notes</h3>
-                    <ul id="notesList">
-                        
-                    </ul>
-                </div>
+        <section>
+            <select id='filterText'>
+                <option value="all">Sort By... </option>
+                <option value="1">Sort A-Ö</option>
+                <option value="2">Sort Ö-A</option>
+                <option value="3">Sort by latest</option>
+                <option value="4">Sort by oldest</option>
+                <input id="searchbar" type="text" placeholder="Search for...">
                 
-                <div>
-                    <h2>My Titles</h2>
-                    <ul id="titleList">
-    
-                    </ul>
-                </div>
-            </div>
-    
+            </select>
         </section>
+        
+        
+        
+        <h4>My Titles</h4>
+        <ul id="titleList"></ul> 
+    </div>            
     
-    </body>
-    </html>
+                
+                    <div class="addNotes">
+
+                        <form onsubmit="addNote(event)">
+    
+                            <input id="titleInput" name="title" type="text" placeholder="Title" required>
+                            <br>
+                            <textarea name="note" id="noteField" cols="30" rows="10" placeholder="Write here..." required></textarea>
+                            <br>
+                            <input  id="fileInput" type="file" multiple  accept="image/*, .txt, .pdf, .doc, .docx" placeholder="Välj fil">
+                            <button type="submit">Add note</button>
+                            
+                        </form>
+                    </div>
+        
+
+               
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <h2>My Notes</h2>
+                <ul id="notesList"></ul>
+                
+            </div>
+   
+    
+    
+</body>
+</html>

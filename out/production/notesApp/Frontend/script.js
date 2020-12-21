@@ -1,61 +1,119 @@
+
+
+// array for the notes
 let notes = [];
-getNotes();
+
+// array for file input
+let filesRender = [];
+
+//array for the files
+let filesToNote = [];
+
+getFiles();
+getNotes();    
+
+
+
+
+async function addNote() {
+    
+
+    let files = document.querySelector('input[type=file]').files;
+
+    let formData = new FormData();
+
+
+    for(let file of files) {
+        formData.append("files", file, file.name);
+    }
+
+    /*for(let p of formData){
+        console.log(p);
+    } */
+
+
+    let uploadResult = await fetch('/api/file-upload', {
+        method: 'POST',
+        body: formData 
+
+    });
+
+
+    let fileInput = await uploadResult.text(); 
+
+    
+    let titleInput = $("#titleInput").val();
+    let textInput = $("#noteField").val();
+
+    if (titleInput.length > 0 && textInput.length > 0) {
+
+        let note = {
+            
+            title: titleInput,
+            text: textInput,
+        }
+
+        let file = {
+            myFile: fileInput
+            
+            
+        }
+
+
+        filesRender.push(file);
+       
+        notes.push(note);
+        addItemToDB(note);
+        addFileToDB(file);
+        
+    } else {
+        alert("Please enter title and text")
+
+    }
+
+    
+    console.log(filesRender);
+    renderList();
+    renderTitles();
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 //adding a new note to the list.
-/*function addNote(e) {
-    e.preventDefault();
-    let titleInput = $("#titleInput").val();
-    let textInput = $("#noteField").val();
-    let files = $('#fileInput').files;
-    let formData = new FormData();
-    
-    
-    if (titleInput.length > 0 && textInput.length > 0) {
-        
-        let note = {
-            title: titleInput,
-            text: textInput,
-            imageUrl: imageUrl
+
+                
             
-        }
-        
-        for(let file of files) {
-            formData.append('files', file, file.name);
-        }
-        
-
-
-        
-
-        notes.push(note);
-        addItemToDB(note);
-        
-    } else {
-        alert("Please enter title and text.");
-    }
-    
-    renderList();
-    renderTitles();
-}*/
-
-
-
-
-
-    
-
-
-
-
-
+            
+            
+//adding a data-value to the li element when added to be able to sort
+//the list in frontend by latest added and oldest added
 function addIdToLiElement(){
     $('#notesList li').attr('data-value', function(i) {
         return (i);
      });
 
 }
+
+
 // function to display the list of notes on the page.
 function renderList() {
     let list = $("#notesList");
@@ -65,17 +123,16 @@ function renderList() {
         
         list.append(`<li id="noteId"> <h3>${everyNote.title}</h3> <br>
         published: ${date} <br> 
-        <img src="${everyNote.imageUrl}" alt="post-image"> <br>
         <p>${everyNote.text}</p>
+        <li><img src="${everyFile.myFile}" alt="post-image" width="200" height="150"></li>
         <button class="deleteButton">Delete</button></li>`);
-
         
     }
+    
+      
     deleteFunction();
     addIdToLiElement();
 }
-
-//renders titles in different list
 
 
 
@@ -99,48 +156,11 @@ function renderTitles() {
     hideShowTitle();
 
 }
-
-async function addNote(e) {
-    e.preventDefault();
+//frontend function for titlelist, to be able to se more or less content
+//and as default not be able to see more then 9 elements
 function hideShowTitle() {
     var el = $( '#titleList' );
 
-    let files = document.querySelector('input[type=file]').files;
-    let formData = new FormData();
-
-    for(let file of files) {
-        formData.append('files', file, file.name);
-    }
-
-    let uploadResult = await fetch('/api/file-upload',{
-        method: 'POST',
-        body: formData
-    });
-
-    let myFile = await uploadResult.text();
-
-    let titleInput = $("#titleInput").val();
-    let textInput = $("#noteField").val();
-    
-    if (titleInput.length > 0 && textInput.length > 0) {
-        
-        let note = {
-            title: titleInput,
-            text: textInput,
-            myFile: myFile
-        }
-
-        notes.push(note);
-        addItemToDB(note);
-    } else {
-        alert("Please enter title and text.");
-    }
-
-    renderList();
-    renderTitles();
-}
-
-// searchbar function
         $( el )
             .find( 'li:gt(9)' )
 			.hide()
@@ -182,17 +202,9 @@ $(function(){
 
 
 
-//drop down menu
-$(function() {
-    $("#filterText").change(function() {
-      var choice = $('#filterText').val();
-      if (choice != "all") $("ul").show().not('#' + choice).hide();
-      else $("ul").show();
-    });
-});
 
 
-//drop down menu
+//drop down menu to order elements in list
     
 function sort(selector) { 
     
@@ -222,8 +234,6 @@ function sort(selector) {
                 return (A < B) ? -1 : (A > B) ? 1 : 0; 
             }).appendTo(selector);
 
-
-//deletes from notes
                 
         }
         //order list oldest
@@ -247,10 +257,6 @@ function sort(selector) {
             
     
     
-
-
-
-
 //deletes from notes
 function deleteFunction() {
     let deleteButtons = $(".deleteButton");
@@ -264,29 +270,48 @@ function deleteFunction() {
             notes.splice(i,1); 
         });
     }
+    
 }
 
 
 
-/*async function getFiles(){
-    let formData = new FormData();
-    let uploadResult = await fetch('/api/file-upload', {
-        method: 'POST',
-        body: formData
-    });
 
-    let imageUrl = await uploadResult.text();
-}*/
+async function addFileToDB(myFile) {
+
+    let result = await fetch('/rest/files', {
+        method: 'POST',
+        body: JSON.stringify(myFile)
+    });
+}
 
 
 
 async function addItemToDB(note) {
+    
     let result = await fetch('/rest/notes', {
         method: "POST",
         body: JSON.stringify(note)
     });
+
+    
+
 }
 
+async function getFiles() {
+    let result = await fetch("/rest/notes");
+    filesList = await result.json();
+    renderList();
+    renderImages();
+}
+
+
+async function deleteNote(note) {
+    let result = await fetch("/rest/notes/id", {
+        method: "DELETE",
+        body: JSON.stringify(note)
+    });
+    location.reload();
+}
 
 async function getNotes() {
     let result = await fetch('/rest/notes');
@@ -296,58 +321,5 @@ async function getNotes() {
     renderTitles();
 }
 
-async function deleteNote(note) {
-    let result = await fetch("/rest/notes/id", {
-        method: "DELETE",
-        body: JSON.stringify(note)
-    });
-}
 
 
-
-async function createPost(e) {
-    e.preventDefault();
-
-    
-    let files = $('#fileInput').files;
-    let formData = new FormData();
-
-    for(let file of files) {
-        formData.append('files', file, file.name);
-    }
-
-    
-    let uploadResult = await fetch('/api/file-upload', {
-        method: 'POST',
-        body: formData
-    });
-
-    
-    let imageUrl = await uploadResult.text();
-
-    let titleInput = $("#titleInput").val();
-    let textInput = $("#noteField").val();
-
-    
-    let note = {
-        title: titleInput,
-        text: textInput,
-        imageUrl: imageUrl
-    }
-
-    
-    notes.push(note);
-    addItemToDB(note);
-    renderList();
-    renderTitles();
-    console.log(await result.text())
-}
-
-
-
-
-
-
-
-
-getNotes();
