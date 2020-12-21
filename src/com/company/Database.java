@@ -6,6 +6,7 @@ import express.utils.Utils;
 import org.apache.commons.fileupload.FileItem;
 
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.nio.file.Paths;
 import java.sql.*;
 import java.time.Instant;
@@ -54,9 +55,8 @@ public class Database {
 
             Notes[] notesFromRs = (Notes[]) Utils.readResultSetToObject(rs, Notes[].class);
             notes = List.of(notesFromRs);
-
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (SQLException | JsonProcessingException throwables) {
+            throwables.printStackTrace();
         }
 
         return notes;
@@ -180,15 +180,26 @@ public class Database {
 
             note = notesFromRs[0];
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (SQLException | JsonProcessingException throwables) {
+            throwables.printStackTrace();
         }
 
         return note;
     }
 
+    public void updateNote(Notes note) {
+
+        try {
+            PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET text = ? WHERE id = ?");
+            stmt.setString(1, note.getText());
+            stmt.setInt(2, note.getId());
 
 
+            stmt.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
 
     public void deleteNotes(Notes note) {
 

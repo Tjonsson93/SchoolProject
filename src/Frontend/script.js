@@ -118,21 +118,24 @@ function addIdToLiElement(){
 function renderList() {
     let list = $("#notesList");
     list.empty();
-    for (everyNote of notes) {
+    
+     for (everyNote of notes) {
         let date = new Date(everyNote.timestamp).toLocaleString();
         
         list.append(`<li id="noteId"> <h3>${everyNote.title}</h3> <br>
         published: ${date} <br> 
         <p>${everyNote.text}</p>
         <li><img src="${everyNote.myFile}" alt="post-image" width="200" height="150"></li>
-        <button class="deleteButton">Delete</button></li>`);
         
     }
     
       
+        <button class="deleteButton">Delete</button> <button class="updateButton" onClick="updateNote(${everyNote.id})">Update</button></li>`);
+        <button class="deleteButton">Delete</button></li>`);
     deleteFunction();
     addIdToLiElement();
 }
+    updateNote();
 
 
 
@@ -146,11 +149,7 @@ function renderTitles() {
     
     for (everyNote of notes) {
         
-        
         list.append(`<li id="titleLink">${everyNote.title}</li>`);
-        
-        
-        
     }
     
     hideShowTitle();
@@ -184,7 +183,7 @@ function hideShowTitle() {
 // searchbar function
 $(function(){
 
-    $('#searchbar').keyup(function(){
+    $('#searchBar').keyup(function(){
         
         var searchText = $(this).val();
         
@@ -193,16 +192,57 @@ $(function(){
             var currentLiText = $(this).text(),
                 showCurrentLi = currentLiText.indexOf(searchText) !== -1;
             
-            $(this).toggle(showCurrentLi);
-            
+            $(this).toggle(showCurrentLi);            
         });     
     });
-
 });
 
+function sort(selector) { 
+    
+    let choice = $('#filterText').val();
+        
+        //order list alphabeticly A-Ö
+        if (choice == "1") {
+            $(selector).children("li").sort(function(a, b) { 
+                var A = $(a).text().toUpperCase(); 
+                var B = $(b).text().toUpperCase(); 
+                return (A < B) ? -1 : (A > B) ? 1 : 0; 
+            }).appendTo(selector); 
+        } 
+        // order list alphabeticly Ö-A
+        else if(choice == "2"){
+            $(selector).children("li").sort(function(b, a) { 
+                var A = $(a).text().toUpperCase(); 
+                var B = $(b).text().toUpperCase(); 
+                return (A < B) ? -1 : (A > B) ? 1 : 0; 
+            }).appendTo(selector); 
+        }   
+        //order list latest
+        else if(choice == "3"){
+            $(selector).children("li").sort(function(b, a) {
+                var A = parseInt(a.getAttribute('data-value'));
+                var B = parseInt(b.getAttribute('data-value'));
+                return (A < B) ? -1 : (A > B) ? 1 : 0; 
+            }).appendTo(selector);
+
+                
+        }
+        //order list oldest
+        else if(choice == "4") {
+            $(selector).children("li").sort(function(a, b) {
+                var A = parseInt(a.getAttribute('data-value'));
+                var B = parseInt(b.getAttribute('data-value'));
+                return (A < B) ? -1 : (A > B) ? 1 : 0; 
+            }).appendTo(selector);
+        }
+}    
+    $('#filterText').change(function() { 
+    sort("#notesList"); 
+    });
 
 
-
+function hideShowTitle() {
+    var el = $( 'ul' );
 
 //drop down menu to order elements in list
     
@@ -290,7 +330,7 @@ async function addItemToDB(note) {
     
     let result = await fetch('/rest/notes', {
         method: "POST",
-        body: JSON.stringify(note)
+        body: JSON.stringify(notes)
     });
 
     
@@ -307,8 +347,16 @@ async function getFiles() {
 
 async function deleteNote(note) {
     let result = await fetch("/rest/notes/id", {
+    method: "PUT",
+    body: JSON.stringify(note)
+    });
+}
+
+async function deleteNote(notes) {
+    
+    let result = await fetch("/rest/notes/id", {
         method: "DELETE",
-        body: JSON.stringify(note)
+        body: JSON.stringify(notes)
     });
     location.reload();
 }

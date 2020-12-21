@@ -31,7 +31,6 @@ public class Notes {
 
     }
 
-
     public int getId() {
         return id;
     }
@@ -76,5 +75,3 @@ public class Notes {
                 '}';
     }
 }
-
-
