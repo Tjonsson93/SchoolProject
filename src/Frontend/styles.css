@@ -1,84 +1,162 @@
-
-/** {
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
 nav{
+    margin-top: 30px;
     text-align: center;
-    background-color: #9fc5c5;
-
+    background-color: #5757574f;
+    padding: 7.5px 20px;    
 }
 
-body {
-    background-color:#9fc5c5;
+body.newNote {
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}    
+
+body.home{
+    background-color: #3db3b3;
+}
+
+header h1 { 
+    font-family: Noto Sans JP, sans-serif;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-img {
     width: 100%;
+    background-color: #33a7a773;
+    color: #025c5c;
+    padding: 17px 0px 17px;
+    margin-top: 50px;
+    
 }
 
-form {
-    max-width: 400px;
-    margin: auto;
+a { 
+    font-size: 20px;
+    font-family: Noto Sans JP, sans-serif;
+    color: #025c5c;
+    text-decoration: none;
 }
 
-input {
+h2, h3, h4 {
+    margin-top:15px;
+    font-family: Noto Sans JP, sans-serif;
+    color: #024242;
+    text-align: center;
+    background-color:#52b1b1a8;
+    border-radius: 4px;
+}
+
+h2 {
+    text-align: center;
     width: 100%;
-    margin: 5px 0;
+    margin-bottom: 50px;
 }
 
-textarea {
+h3 {
+    padding: 10px 10px;
     width: 100%;
-    margin: 5px 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: left;
+    background-color: #dae9e9;
+    border-radius: 3px;
+    border: 1px solid #025c5c;
 }
 
-ul {
-    list-style: none;
-    margin-left: 40%;
+h4 {
+    font-size: 20px;
+    margin: 0 ;
+    padding: 0.5rem;    
+    margin-top: 10px;
+    background-color: #5757574f;
+    color:black;
 }
 
-ul li {
-    background: white;
-    width: 25%;
-    margin: 5px 0;
-    padding-bottom: 15px;
-    border: 2px solid gray;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 0 gray;
-}
-
-ul li > img {
-    border-radius: 20px 20px 0px 0px;
-}
-
-#searchBar {
-    padding: 0.2rem;
-    max-width: 150px;
+button {
+    padding: 8px 5px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #025c5c;
+    color: #025c5c;
 
 }
 
-#filterText {
-    padding: 0.2rem;
+select input{
+    display: inline;
+    font-size: 12px;
+    
+}
+
+
+
+li {
+    list-style-type: none;
+    margin: 0;
+}
+
+img{
+    margin-top: 20px;
+    margin-left: 20px;
+}    
+.addNotes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display:inline-block;
+}
+
+.deleteButton {
+    background-color:  #3fa3a3;
+    color: rgb(231, 231, 231); 
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.homeBtn {
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    border: 1px solid #025c5c;
+    
+}
+
+.fa-home:before{
+    font-size: 30px;
+    color: black;
+    
+}
+
+input#myFile{
+    color: #114747;
+    font-size: 16px;
+    margin: 0;
+}
+
+#searchbar {
+    margin-top: 15px;
+    font-size: 12px;
+    padding: 5px 5px;
+    width: 73%;
+}
+#filterText{
+    padding: 4px 2px 4px 2px;
+    
 }
 
 #titleInput {
-    padding: 0.2rem;
-}*/
+    font-family: 'Reenie Beanie', cursive;
+    border-radius: 5px;
+    border: 1px solid  #025c5c;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 16px;
+}
 
-
-/* #save {
-    background-color: #025c5c;
-    padding: 6px 12px;
-    font-family: Noto Sans JP, sans-serif;
-    border: 1px solid #499191;
-    color:#9fc5c5;
-    border-radius: 2px;
-} */
-
-/*#titleList {
+#titleList {
     font-family: 'Reenie Beanie', cursive;
     font: bold;
     font-size: 15px;
@@ -88,41 +166,42 @@ ul li > img {
     color: #025c5c;
 }
 
-#addFile, #button {
-    margin: 10px 0px;
-    margin-top: 40px;
-}
 
-#addPicture{
-    padding: 6px 12px;
-    border-radius: 3px;
+#myNote {
+    list-style-type: none;
+    font-size: 14px;
+    font-family: 'Reenie Beanie', cursive;
+    border-radius: 5px;
     border: 1px solid #025c5c;
-    color: #025c5c;
+    padding: 10px 10px 10px;       
+    background-color: #c8d8d8;
+    width: 25%;
+    margin-left: 43rem;
+    margin-bottom: 50px;
+    resize: none;
+    
 }
-
 div.addNotes {
     margin-top: 4%
-}*/
-
+}
 
 /*LINES TEXTAREA*/
-/*textarea {
+textarea {
     color: #000000;
     border: 1px solid #EEEEEE;
     box-shadow: 1px 1px 0 #DDDDDD;
     display: inline-block;
     vertical-align: top;
+    resize: none;
     
     font-family: 'Reenie Beanie', cursive;
     font-size: 16px;
     color: #025c5c;
-    
     line-height: 20px;
     margin: 0;
     padding: 20px 20px 5px;
-    resize: none;
-    min-height: 400px;
-    width: 30%;
+    min-height: 200px;
+    width: 100%;
     
     background-color: #eaf2fa;
     background-image: -moz-linear-gradient(top, transparent, transparent 19px,#b8c5d3 0px), -moz-radial-gradient(4% 50%, circle closest-corner, #f5f5f5, #f5f5f5 29%, transparent 0%);
@@ -133,35 +212,37 @@ div.addNotes {
     border-radius: 5px;
     border: 1px solid #025c5c;
 }
-#noteId {
-    list-style-type: none;
+
+
+#editText {
     font-size: 14px;
     font-family: 'Reenie Beanie', cursive;
-    padding: 0.3rem;
     border-radius: 5px;
     border: 1px solid #025c5c;
-
+    padding: 10px 10px 10px;       
+    resize: none;
+    min-height: 200px;
+    width: 50%;
+    
     background-color: #eaf2fa;
     background-image: -moz-linear-gradient(top, transparent, transparent 19px,#b8c5d3 0px), -moz-radial-gradient(4% 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent 0%);
     background-image: -webkit-linear-gradient(top, transparent, transparent 19px, #b8c5d3 0), -webkit-radial-gradient(3% 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent 0%);
     -webkit-background-size: 100% 20px;
     background-size: 100% 20px;
-
+    
     line-height: 20px;
-
-
-}*/
-
+    outline: none;
+    border: none;
+}
 
 /*HOME PAGE EFFEKT NOTEPAD*/
-
-/*a.new {
+a.new {
     font-family: 'Reenie Beanie', cursive;
     display: block;
     transform: rotate(90deg); 
-    font-size: 18px;
-    margin-top: 120px;
-    margin-left: 80px;
+    font-size: 14px;
+    margin-top: 80px;
+    margin-left: 60px;
     color: white;
 }
 
@@ -173,6 +254,7 @@ div.addNotes {
     margin-right: auto;
     width: 30%;
 }
+
 .overlay {
     position: absolute;
     margin-left: 52%;
@@ -186,7 +268,7 @@ div.addNotes {
     opacity: 0; 
     transition: .5s ease;
 }
-  
+
 .container:hover .overlay {
     opacity: 1;
 }
@@ -202,10 +284,10 @@ div.addNotes {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-}*/
+}
 
 /*SIDEBAR*/
-/*.sidebar {
+.sidebar {
     height: 100%;
     width: 300px;
     position: fixed;
@@ -215,73 +297,4 @@ div.addNotes {
     background-color: rgba(240, 240, 240, 0.836);
     overflow-x: hidden;
     padding-top: 20px;
-}
-
-
-
-#notesList li img {
-    border-radius: 20px 20px 0px 0px;
-}*/
-nav{
-    text-align: center;
-    background-color: #9fc5c5;
-
-}
-
-body {
-    background-color:#9fc5c5;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-img {
-    width: 100%;
-}
-
-form {
-    max-width: 400px;
-    margin: auto;
-}
-
-input {
-    width: 100%;
-    margin: 5px 0;
-}
-
-textarea {
-    width: 100%;
-    margin: 5px 0;
-}
-
-ul {
-    list-style: none;
-    margin-left: 40%;
-}
-
-ul li {
-    background: white;
-    width: 25%;
-    margin: 5px 0;
-    padding-bottom: 15px;
-    border: 2px solid gray;
-    border-radius: 20px;
-    box-shadow: 0 0 10px 0 gray;
-}
-
-ul li > img {
-    border-radius: 20px 20px 0px 0px;
-}
-
-#searchBar {
-    padding: 0.2rem;
-    max-width: 150px;
-
-}
-
-#filterText {
-    padding: 0.2rem;
-}
-
-#titleInput {
-    padding: 0.2rem;
-}
+} 

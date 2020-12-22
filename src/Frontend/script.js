@@ -1,6 +1,3 @@
-
-
-
 let notes = [];
 let arrayOfFiles = [];
 getNotes();
@@ -27,8 +24,6 @@ async function addNote(e) {
 
 
     let fileInput = await uploadResult.text(); 
-
-
     let titleInput = $("#titleInput").val();
     let textInput = $("#noteField").val();
 
@@ -69,28 +64,29 @@ function addIdToLiElement(){
     });
 }
 
-// function to display the list of notes on the page.
+
 function renderList() {
-    let list = $("#notesList");
-    list.empty();
-    for (everyNote of notes) {
-        let date = new Date(everyNote.timestamp).toLocaleString();
-        
-        
-        list.append(`<li><h3>${everyNote.title}</h3> <br> 
-        <p id="myNote" contentEditable="true">${date}</p>
-        <input id="editText" name="edit" type="text" placeholder="${everyNote.text}"></input>
-        <button class="deleteButton">Delete</button> <button class="updateButton" onClick="updateNote(${everyNote.id})">Update</button></li>`);
 
-        for (everyFile of arrayOfFiles) {
-            if(everyFile.notesId === everyNote.id){
-                list.append(`<li><img id="imgsrc" src=${everyFile.myFile}</li>`);
-            }
+    $("#notesList").empty();
+    for(let i = 0 ; i < notes.length ; i++){
+        let date = new Date(notes[i].timestamp).toLocaleString();
+        let container = `<li id="myNote">`
+        container += `<h3>${notes[i].title}</h3> <br> ${date}
+        <textarea class="editText" >${notes[i].text}</textarea>`;
+         
+
+    for(let a = 0; a < arrayOfFiles.length; a++){
+        
+        if(arrayOfFiles[a].notesId == notes[i].id){
             
+            container += `<img id="imgsrc" src=${arrayOfFiles[a].myFile} width="400" height="300">`;
+        
         }
-
+        
     }
-    
+    container += `<button class="deleteButton">Delete</button> <button class="updateButton">Update</button></li>`;
+    $("#notesList").append(container);
+    }
     deleteFunction();
     deleteFile();
     addIdToLiElement();
@@ -98,7 +94,7 @@ function renderList() {
 }
 
 
-//renders titles in different list
+
 function renderTitles() {
     let list = $("#titleList");
     list.empty();
@@ -145,7 +141,6 @@ function hideShowTitle() {
 			 );
 
 }
-
 
 //drop down menu
 function sort(selector) { 
@@ -219,7 +214,6 @@ function deleteFunction() {
     }
    
 }
-
 function deleteFile() {
     let deleteButtons = $(".deleteButton");
     
@@ -273,17 +267,28 @@ async function getFilesFromNotesId(notesId) {
 
 }
 
-
 async function updateNoteInDb(note) {
-    let result = await fetch("/rest/notes/id", {
+    let result = await fetch("/rest/notes/:id", {
     method: "PUT",
     body: JSON.stringify(note)
     });
     
 }
 
+
+function updateNote(){
+    let updateButton = $(".updateButton");
+    for(let i = 0; i < updateButton.length; i++){
+        $(updateButton[i]).click(function(){
+            let newText = $(".editText").val();
+            notes[i].text = newText;
+            updateNoteInDb(notes[i]);
+        });
+    }
+}  
+        
 async function deleteNote(note) {
-    let result = await fetch("/rest/notes/id", {
+    let result = await fetch("/rest/notes/:id", {
         method: "DELETE",
         body: JSON.stringify(note)
     });
@@ -291,7 +296,7 @@ async function deleteNote(note) {
 }
 
 async function deleteFileFromDB(file) {
-    let result = await fetch("/rest/files/id", {
+    let result = await fetch("/rest/files/:id", {
         method: "DELETE",
         body: JSON.stringify(file)
     });

@@ -47,18 +47,6 @@ public class Main {
 
             res.json(myFile);
         });
-       /* app.post("/api/file-upload", (req, res) -> {
-            String myFile = null;
-
-            try {
-                List<FileItem> files = req.getFormData("files");
-                myFile = db.uploadFile(files.get(0));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-            res.json(myFile);
-        }); */
 
         app.get("/rest/notes", (req, res) -> {
             List<Notes> notes = db.getNotes();
@@ -109,14 +97,6 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        /*try {
-            app.use(Middleware.statics(Paths.get("src/Files").toString()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-
-
 
         app.listen(5500);
         System.out.println("server started at port 5500");
