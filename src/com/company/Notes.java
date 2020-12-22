@@ -10,6 +10,15 @@ public class Notes {
 
     public Notes() { }
 
+    public Notes(int id, String text) {
+        this.id = id;
+        this.text = text;
+    }
+
+    public Notes(String text) {
+        this.text = text;
+    }
+
     public Notes(String title, String text, long timestamp) {
         this.title = title;
         this.text = text;

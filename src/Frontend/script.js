@@ -1,22 +1,14 @@
 
 
-// array for the notes
+
 let notes = [];
-
-// array for file input
-let filesRender = [];
-
-//array for the files
-let filesToNote = [];
-
+let arrayOfFiles = [];
+getNotes();
 getFiles();
-getNotes();    
 
 
-
-
-async function addNote() {
-    
+async function addNote(e) {
+    e.preventDefault();
 
     let files = document.querySelector('input[type=file]').files;
 
@@ -27,11 +19,6 @@ async function addNote() {
         formData.append("files", file, file.name);
     }
 
-    /*for(let p of formData){
-        console.log(p);
-    } */
-
-
     let uploadResult = await fetch('/api/file-upload', {
         method: 'POST',
         body: formData 
@@ -41,124 +28,106 @@ async function addNote() {
 
     let fileInput = await uploadResult.text(); 
 
-    
+
     let titleInput = $("#titleInput").val();
     let textInput = $("#noteField").val();
 
     if (titleInput.length > 0 && textInput.length > 0) {
 
         let note = {
-            
             title: titleInput,
             text: textInput,
         }
 
-        let file = {
+        let myFile = {
             myFile: fileInput
-            
-            
         }
 
-
-        filesRender.push(file);
-       
         notes.push(note);
+        if(myFile != null){
+            arrayOfFiles.push(myFile)
+        }
         addItemToDB(note);
-        addFileToDB(file);
-        
+        addFileToDB(myFile);
+
     } else {
         alert("Please enter title and text")
 
     }
 
-    
-    console.log(filesRender);
+    if (fileInput )
+    location.reload();
     renderList();
     renderTitles();
-    
+
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//adding a new note to the list.
-
-                
-            
-            
-            
-//adding a data-value to the li element when added to be able to sort
-//the list in frontend by latest added and oldest added
 function addIdToLiElement(){
-    $('#notesList li').attr('data-value', function(i) {
+    $("#notesList li").attr("data-value", function(i) {
         return (i);
-     });
-
+    });
 }
-
 
 // function to display the list of notes on the page.
 function renderList() {
     let list = $("#notesList");
     list.empty();
-    
-     for (everyNote of notes) {
+    for (everyNote of notes) {
         let date = new Date(everyNote.timestamp).toLocaleString();
         
-        list.append(`<li id="noteId"> <h3>${everyNote.title}</h3> <br>
-        published: ${date} <br> 
-        <p>${everyNote.text}</p>
-        <li><img src="${everyNote.myFile}" alt="post-image" width="200" height="150"></li>
         
+        list.append(`<li><h3>${everyNote.title}</h3> <br> 
+        <p id="myNote" contentEditable="true">${date}</p>
+        <input id="editText" name="edit" type="text" placeholder="${everyNote.text}"></input>
+        <button class="deleteButton">Delete</button> <button class="updateButton" onClick="updateNote(${everyNote.id})">Update</button></li>`);
+
+        for (everyFile of arrayOfFiles) {
+            if(everyFile.notesId === everyNote.id){
+                list.append(`<li><img id="imgsrc" src=${everyFile.myFile}</li>`);
+            }
+            
+        }
+
     }
     
-      
-        <button class="deleteButton">Delete</button> <button class="updateButton" onClick="updateNote(${everyNote.id})">Update</button></li>`);
-        <button class="deleteButton">Delete</button></li>`);
     deleteFunction();
+    deleteFile();
     addIdToLiElement();
-}
     updateNote();
-
+}
 
 
 //renders titles in different list
 function renderTitles() {
     let list = $("#titleList");
     list.empty();
-    
-    
-    
-    
     for (everyNote of notes) {
         
         list.append(`<li id="titleLink">${everyNote.title}</li>`);
     }
-    
     hideShowTitle();
-
 }
-//frontend function for titlelist, to be able to se more or less content
-//and as default not be able to see more then 9 elements
+
+// searchbar function
+$(function(){
+
+    $('#searchbar').keyup(function(){
+        
+        var searchText = $(this).val();
+        
+        $('#notesList > li').each(function(){
+            
+            var currentLiText = $(this).text(),
+                showCurrentLi = currentLiText.indexOf(searchText) !== -1;
+            
+            $(this).toggle(showCurrentLi);            
+        });     
+    });
+});
+
 function hideShowTitle() {
-    var el = $( '#titleList' );
+    var el = $( 'ul' );
 
         $( el )
             .find( 'li:gt(9)' )
@@ -178,25 +147,7 @@ function hideShowTitle() {
 }
 
 
-
-
-// searchbar function
-$(function(){
-
-    $('#searchBar').keyup(function(){
-        
-        var searchText = $(this).val();
-        
-        $('#notesList > li').each(function(){
-            
-            var currentLiText = $(this).text(),
-                showCurrentLi = currentLiText.indexOf(searchText) !== -1;
-            
-            $(this).toggle(showCurrentLi);            
-        });     
-    });
-});
-
+//drop down menu
 function sort(selector) { 
     
     let choice = $('#filterText').val();
@@ -235,68 +186,23 @@ function sort(selector) {
                 return (A < B) ? -1 : (A > B) ? 1 : 0; 
             }).appendTo(selector);
         }
-}    
-    $('#filterText').change(function() { 
-    sort("#notesList"); 
-    });
-
-
-function hideShowTitle() {
-    var el = $( 'ul' );
-
-//drop down menu to order elements in list
-    
-function sort(selector) { 
-    
-    let choice = $('#filterText').val();
-        
-        //order list alphabeticly A-Ö
-        if (choice == "1") {
-            $(selector).children("li").sort(function(a, b) { 
-                var A = $(a).text().toUpperCase(); 
-                var B = $(b).text().toUpperCase(); 
-                return (A < B) ? -1 : (A > B) ? 1 : 0; 
-            }).appendTo(selector); 
-        } 
-        // order list alphabeticly Ö-A
-        else if(choice == "2"){
-            $(selector).children("li").sort(function(b, a) { 
-                var A = $(a).text().toUpperCase(); 
-                var B = $(b).text().toUpperCase(); 
-                return (A < B) ? -1 : (A > B) ? 1 : 0; 
-            }).appendTo(selector); 
-        }   
-        //order list latest
-        else if(choice == "3"){
-            $(selector).children("li").sort(function(b, a) {
-                var A = parseInt(a.getAttribute('data-value'));
-                var B = parseInt(b.getAttribute('data-value'));
-                return (A < B) ? -1 : (A > B) ? 1 : 0; 
-            }).appendTo(selector);
-
-                
-        }
-        //order list oldest
-        else if(choice == "4") {
-            $(selector).children("li").sort(function(a, b) {
-                var A = parseInt(a.getAttribute('data-value'));
-                var B = parseInt(b.getAttribute('data-value'));
-                return (A < B) ? -1 : (A > B) ? 1 : 0; 
-            }).appendTo(selector);
-        }
-           
-                
-           
-            
-            
 }    
     $('#filterText').change(function() { 
         sort("#notesList"); 
             
-    });                        
-            
+    });
+
+    function updateNote(everyNote) {
+        let text = $("#editText").val();
     
+        let newNote = {
+            id: everyNote,
+            text: text
+        }
     
+        updateNoteInDb(newNote);
+    }
+
 //deletes from notes
 function deleteFunction() {
     let deleteButtons = $(".deleteButton");
@@ -308,57 +214,40 @@ function deleteFunction() {
             console.log(notes[i]);
             deleteNote(notes[i]);
             notes.splice(i,1); 
+            
         });
     }
-    
+   
 }
 
+function deleteFile() {
+    let deleteButtons = $(".deleteButton");
+    
+    for (let i = 0; i < deleteButtons.length; i++) {
+        $(deleteButtons[i]).click(function () {
+            //let parentElement = this.parentElement;
+            //parentElement.style.visibility = "none";
+            $('#imgsrc').hide();
+            deleteFileFromDB(arrayOfFiles[i]);
+            arrayOfFiles.splice(i,1); 
+            
+        });
+    }
 
+}
 
+async function addItemToDB(note) {
+    let result = await fetch('/rest/notes', {
+        method: "POST",
+        body: JSON.stringify(note)
+    });
+}
 
 async function addFileToDB(myFile) {
-
-    let result = await fetch('/rest/files', {
+    let result = await fetch('rest/files', {
         method: 'POST',
         body: JSON.stringify(myFile)
     });
-}
-
-
-
-async function addItemToDB(note) {
-    
-    let result = await fetch('/rest/notes', {
-        method: "POST",
-        body: JSON.stringify(notes)
-    });
-
-    
-
-}
-
-async function getFiles() {
-    let result = await fetch("/rest/notes");
-    filesList = await result.json();
-    renderList();
-    
-}
-
-
-async function deleteNote(note) {
-    let result = await fetch("/rest/notes/id", {
-    method: "PUT",
-    body: JSON.stringify(note)
-    });
-}
-
-async function deleteNote(notes) {
-    
-    let result = await fetch("/rest/notes/id", {
-        method: "DELETE",
-        body: JSON.stringify(notes)
-    });
-    location.reload();
 }
 
 async function getNotes() {
@@ -369,5 +258,44 @@ async function getNotes() {
     renderTitles();
 }
 
+async function getFiles() {
+    let result = await fetch('/rest/files');
+    arrayOfFiles = await result.json();
+}
 
 
+
+async function getFilesFromNotesId(notesId) {
+    notesId = note.id
+    let result = await fetch('rest/files')
+    files = await result.json();
+    
+
+}
+
+
+async function updateNoteInDb(note) {
+    let result = await fetch("/rest/notes/id", {
+    method: "PUT",
+    body: JSON.stringify(note)
+    });
+    
+}
+
+async function deleteNote(note) {
+    let result = await fetch("/rest/notes/id", {
+        method: "DELETE",
+        body: JSON.stringify(note)
+    });
+    location.reload();
+}
+
+async function deleteFileFromDB(file) {
+    let result = await fetch("/rest/files/id", {
+        method: "DELETE",
+        body: JSON.stringify(file)
+    });
+    location.reload();
+}
+
+getNotes();

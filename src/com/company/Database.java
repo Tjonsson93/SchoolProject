@@ -1,5 +1,5 @@
-package com.company;
 
+package com.company;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import express.utils.Utils;
@@ -16,9 +16,6 @@ public class Database {
 
     private Connection conn;
 
-
-
-
     public Database() {
 
         try {
@@ -27,6 +24,22 @@ public class Database {
             throwables.printStackTrace();
         }
     }
+
+    public void createNote(Notes note) {
+
+        try {
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO notes (title, text, timestamp) VALUES (?, ?, ?)");
+            stmt.setString(1, note.getTitle());
+            stmt.setString(2, note.getText());
+            stmt.setLong(3, Instant.now().toEpochMilli());
+
+            stmt.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+    }
+
     public String getMaxId(){
         String max_id = null;
         try {
@@ -46,6 +59,57 @@ public class Database {
 
         return max_id;
     }
+
+    public void createFile(Files file) {
+        try {
+            PreparedStatement stmt = conn.prepareStatement("INSERT INTO files (myFile, notesId) VALUES (?, ?)");
+            stmt.setString(1, file.getMyFile());
+            stmt.setInt(2,Integer.parseInt(getMaxId()));
+
+            stmt.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
+    public void deleteFiles(Files files) {
+
+        try {
+            PreparedStatement stmt = conn.prepareStatement("DELETE FROM files WHERE notesId = ?");
+            stmt.setInt(1, files.getNotesId());
+
+            stmt.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
+    public String uploadFile(FileItem file) {
+        String myFile = "/uploads/" + file.getName();
+
+        try (var os = new FileOutputStream(Paths.get("src/Frontend" + myFile).toString())) {
+            os.write(file.get());
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+
+        return myFile;
+    }
+
+    public void updateNote(Notes note) {
+
+        try {
+            PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET text = ? WHERE id = ?");
+            stmt.setString(1, note.getText());
+            stmt.setInt(2, note.getId());
+
+            stmt.executeUpdate();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+    }
+
     public List<Notes> getNotes() {
         List<Notes> notes = null;
 
@@ -62,110 +126,37 @@ public class Database {
         return notes;
     }
 
+    public List<Files> getFiles(){
+        List<Files> arrayOfFiles = null;
 
-
-    public List<Files> getFileUrl () {
-        List<Files> files = null;
-
-        try {
+        try{
             PreparedStatement stmt = conn.prepareStatement("SELECT * FROM files");
-
-
             ResultSet rs = stmt.executeQuery();
 
-            Files[] filesFromRs = (Files[]) Utils.readResultSetToObject(rs, Files[].class);
-            files = List.of(filesFromRs);
-
-
+            Files [] filesFromRs = (Files[]) Utils.readResultSetToObject(rs, Files[].class);
+            arrayOfFiles = List.of(filesFromRs);
 
         } catch (SQLException | JsonProcessingException throwables) {
             throwables.printStackTrace();
         }
-        System.out.println("utskrift av fil:" + files);
-        return files;
-
+        return arrayOfFiles;
     }
+    public List<Files> getFilesByNotesId(int notesId) {
+        List<Files> filesById = null;
 
-    public void createFile(Files files) {
+        try{
+            PreparedStatement stmt = conn.prepareStatement("SELECT files.myFile FROM notes, files WHERE files.notesId = ?");
+            stmt.setInt(1, notesId);
+            ResultSet rs = stmt.executeQuery();
 
-
-
-        try {
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO files (myFile, notes_id) VALUES (? ,?)");
-            stmt.setString(1, files.getMyFile());
-            stmt.setInt(2, Integer.parseInt(getMaxId()));
-
-
-            stmt.executeUpdate();
-
-        } catch (SQLException throwables) {
+            Files[] filesFromRs = (Files[]) Utils.readResultSetToObject(rs, Files[].class);
+            filesById = List.of(filesFromRs);
+        }catch (SQLException | JsonProcessingException throwables) {
             throwables.printStackTrace();
         }
+
+        return filesById;
     }
-
-    public void createNote(Notes note) {
-        getMaxId();
-        try {
-            PreparedStatement stmt = conn.prepareStatement("INSERT INTO notes (title, text, timestamp) VALUES (?, ?, ?) ");
-            stmt.setString(1, note.getTitle());
-            stmt.setString(2, note.getText());
-            stmt.setLong(3, Instant.now().toEpochMilli());
-
-
-
-
-            stmt.executeUpdate();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    public String uploadFile(FileItem file) {
-        String myFile = "/uploads/" + file.getName();
-
-        try (var os = new FileOutputStream(Paths.get("src/Frontend" + myFile).toString())) {
-            os.write(file.get());
-        } catch (Exception e) {
-            e.printStackTrace();
-
-            return null;
-        }
-        System.out.println("hejhej");
-        return myFile;
-    }
-
-
-
-
-
-
-
-
-    // new method to get the fileUrl
-
-
-
-
-
-
-    public void updateNote(Notes note) {
-
-        try {
-            PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET text = ? WHERE id = ?");
-
-            stmt.setString(1, note.getText());
-            stmt.setInt(2, note.getId());
-
-
-
-
-            stmt.executeUpdate();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-    }
-
 
     public Notes getNoteById(int id) {
         Notes note = null;
@@ -187,24 +178,11 @@ public class Database {
         return note;
     }
 
-    public void updateNote(Notes note) {
-
-        try {
-            PreparedStatement stmt = conn.prepareStatement("UPDATE notes SET text = ? WHERE id = ?");
-            stmt.setString(1, note.getText());
-            stmt.setInt(2, note.getId());
-
-
-            stmt.executeUpdate();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-    }
 
     public void deleteNotes(Notes note) {
 
         try {
-            PreparedStatement stmt = conn.prepareStatement("DELETE FROM notes WHERE id = ?;");
+            PreparedStatement stmt = conn.prepareStatement("DELETE FROM notes WHERE id = ?");
             stmt.setInt(1, note.getId());
 
             stmt.executeUpdate();
@@ -213,5 +191,8 @@ public class Database {
         }
     }
 
+ /*OutputStream out = new BufferedOutputStream(.getOutputStream());
+        out.write(.getBytes());
+        out.close() ; */
 
 }

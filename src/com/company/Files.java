@@ -4,50 +4,43 @@ public class Files {
 
     private int id;
     private String myFile;
-    private int notes_id;
+    private int notesId;
 
+    public Files() {}
 
-
-    public Files() {
-    }
-
-    public Files(String myFile) {
+    public Files(String myFile, int notesId) {
         this.myFile = myFile;
+        this.notesId = notesId;
     }
 
-    public Files(String myFile, int notes_id) {
-        this.myFile = myFile;
-        this.notes_id = notes_id;
-    }
-
-    public Files(int id, String myFile, int notes_id) {
+    public Files(int id, String myFile, int notesId) {
         this.id = id;
         this.myFile = myFile;
-        this.notes_id = notes_id;
+        this.notesId = notesId;
     }
 
     public int getId() {
         return id;
     }
 
-    public int getNotes_id() {
-        return notes_id;
-    }
-
-    public void setNotes_id(int notes_id) {
-        this.notes_id = notes_id;
-    }
-
-    public void setId(int id) {
+    public void setId(int id){
         this.id = id;
     }
 
-    public String getMyFile() {
+    public String getMyFile(){
         return myFile;
     }
 
-    public void setMyFile(String myFile) {
+    public void setMyFile(String myFile){
         this.myFile = myFile;
+    }
+
+    public int getNotesId(){
+        return notesId;
+    }
+
+    public void setNotesId(int notesId){
+        this.notesId = notesId;
     }
 
     @Override
@@ -55,7 +48,9 @@ public class Files {
         return "Files{" +
                 "id=" + id +
                 ", myFile='" + myFile + '\'' +
-                ", notes_id=" + notes_id +
-                '}';
+                ",notesId=" + notesId + '}';
+
     }
+
 }
+

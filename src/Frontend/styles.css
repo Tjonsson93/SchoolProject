@@ -66,7 +66,7 @@ ul li > img {
 
 #titleInput {
     padding: 0.2rem;
-}
+}*/
 
 
 /* #save {
@@ -102,7 +102,7 @@ ul li > img {
 
 div.addNotes {
     margin-top: 4%
-}
+}*/
 
 
 /*LINES TEXTAREA*/
@@ -150,7 +150,7 @@ div.addNotes {
     line-height: 20px;
 
 
-}
+}*/
 
 
 /*HOME PAGE EFFEKT NOTEPAD*/
@@ -202,7 +202,7 @@ div.addNotes {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-}
+}*/
 
 /*SIDEBAR*/
 /*.sidebar {
@@ -222,3 +222,66 @@ div.addNotes {
 #notesList li img {
     border-radius: 20px 20px 0px 0px;
 }*/
+nav{
+    text-align: center;
+    background-color: #9fc5c5;
+
+}
+
+body {
+    background-color:#9fc5c5;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    margin: 5px 0;
+}
+
+textarea {
+    width: 100%;
+    margin: 5px 0;
+}
+
+ul {
+    list-style: none;
+    margin-left: 40%;
+}
+
+ul li {
+    background: white;
+    width: 25%;
+    margin: 5px 0;
+    padding-bottom: 15px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 gray;
+}
+
+ul li > img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+#searchBar {
+    padding: 0.2rem;
+    max-width: 150px;
+
+}
+
+#filterText {
+    padding: 0.2rem;
+}
+
+#titleInput {
+    padding: 0.2rem;
+}
