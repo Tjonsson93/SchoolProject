@@ -41,12 +41,12 @@
 </aside>    
     
         <div class="addNotes">
-            <form onsubmit="addNote(event)">
+            <form enctype="multipart/form-data" onsubmit="addNote(event)">
                 <input id="titleInput" name="title" type="text" placeholder="Title">
                 <br><br>
                 <textarea name="note" id="noteField" cols="30" rows="10" placeholder="Write here..."></textarea>
                 <br><br>
-                <input type="file" name="files" accept="image/*, .pdf, .docx, .txt, .zip" id="myFile" multiple>
+                <input id="fileInput" type="file" accept="*/*" multiple="multiple">
                 <br><br>
                 <button type="submit">Add note</button>
             </form>

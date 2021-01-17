@@ -84,11 +84,10 @@ function renderList() {
         }
         
     }
-    container += `<button class="deleteButton">Delete</button> <button class="updateButton">Update</button></li>`;
+    container += `<a href="${arrayOfFiles.myFile}" download>${arrayOfFiles.myFile}</a><button class="deleteButton">Delete</button> <button class="updateButton">Update</button></li>`;
     $("#notesList").append(container);
     }
     deleteFunction();
-    deleteFile();
     addIdToLiElement();
     updateNote();
 }
@@ -198,19 +197,22 @@ function sort(selector) {
         updateNoteInDb(newNote);
     }
 
-//deletes from notes
+
 function deleteFunction() {
     let deleteButtons = $(".deleteButton");
     
     for (let i = 0; i < deleteButtons.length; i++) {
-        $(deleteButtons[i]).click(function () {
-            let parentElement = this.parentElement;
-            parentElement.style.display = "none";
-            console.log(notes[i]);
+            $(deleteButtons[i]).click(function () {
+        if(confirm("You are about to delete this note, continue?")){
             deleteNote(notes[i]);
             notes.splice(i,1); 
+            $(this).parent().remove();
+
+            getNotes();
+            getFiles();     
+        }
             
-        });
+    })
     }
    
 }
@@ -218,14 +220,15 @@ function deleteFile() {
     let deleteButtons = $(".deleteButton");
     
     for (let i = 0; i < deleteButtons.length; i++) {
-        $(deleteButtons[i]).click(function () {
-            //let parentElement = this.parentElement;
-            //parentElement.style.visibility = "none";
-            $('#imgsrc').hide();
+            $(deleteButtons[i]).click(function () {
+        if(confirm("Are you sure?")){     
             deleteFileFromDB(arrayOfFiles[i]);
-            arrayOfFiles.splice(i,1); 
+            arrayOfFiles.splice(i,1);
             
-        });
+            getNotes();
+            getFiles(); 
+        }
+    })
     }
 
 }

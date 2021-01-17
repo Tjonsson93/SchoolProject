@@ -11,7 +11,7 @@ nav{
 }
 
 body.newNote {
-    background-image: url(images/background.jpg);
+    background-color:#83ececc2;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;

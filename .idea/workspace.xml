@@ -4,14 +4,30 @@
     <list default="true" id="7af6c837-916d-4bf4-8fa6-0102695dd778" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NoteApp.db" beforeDir="false" afterPath="$PROJECT_DIR$/NoteApp.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/newNote.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/newNote.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/Frontend/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Frontend/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/uploads/tjohej (1).txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notesApp/Frontend/uploads/tjohej.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notesApp/com/company/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/notesApp/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/notesApp/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/files/notebackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/files/photo-1595853035070-59a39fe84de3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/newNote.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/newNote.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Frontend/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/Notes.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/Trello.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/Trello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/b9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/cosy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/css html js.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/css.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/er ny.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/esport.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/hot.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Frontend/uploads/juicy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +48,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/com/company/Database.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -42,9 +61,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/todoey" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Smart-note-FRONTEND---BACKEND-main" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -97,6 +118,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added values to notes, created sqlite queries" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Database_java$Main.ic" NAME="Main Coverage Results" MODIFIED="1610888544880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.company.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/SchoolProject$Main.ic" NAME="Main Coverage Results" MODIFIED="1607697018901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
